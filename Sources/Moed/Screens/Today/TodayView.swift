@@ -162,7 +162,7 @@ private struct DateHeaderBlock: View {
 
             // Rangée de badges (Omer / fête / Roch Hodech), wrap flexible, max 3.
             if !badges.isEmpty {
-                FlowLayout(spacing: MoedSpace.s8) {
+                TodayFlowLayout(spacing: MoedSpace.s8) {
                     ForEach(badges) { HeaderBadge(badge: $0, lang: lang) }
                 }
                 .padding(.top, MoedSpace.s8)
@@ -653,7 +653,7 @@ private struct TodayScrollOffsetKey: PreferenceKey {
 
 // MARK: - Flow layout (wrap des badges, iOS 16+ Layout)
 
-private struct FlowLayout: Layout {
+private struct TodayFlowLayout: Layout {
     var spacing: CGFloat = 8
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {

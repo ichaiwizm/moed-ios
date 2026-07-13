@@ -201,7 +201,7 @@ struct PersonalView: View {
             // Cartes des proches (cardSolid), suppression par swipe trailing (rose).
             Section {
                 ForEach(app.family) { person in
-                    PersonRow(
+                    PersonalPersonRow(
                         person: person,
                         occurrence: app.occurrences(person).first,
                         now: app.now,
@@ -305,7 +305,7 @@ struct PersonalView: View {
 /// Carte lisible d'un proche : pastille de type · nom · prochaine occurrence
 /// (grég + héb) · badge « dans X jours ». Contenu de LECTURE → surface opaque
 /// `cardSolid`, jamais de verre (DESIGN §5.4). Stateless : tout dérive des entrées.
-private struct PersonRow: View {
+private struct PersonalPersonRow: View {
 
     let person: PersonRecord
     /// Prochaine occurrence (déjà calculée par le moteur via `AppState`), ou `nil`

@@ -133,7 +133,7 @@ struct PersonalView: View {
 
                 // Bouton flottant d'ajout (Liquid Glass) — ancre logique bottom-trailing
                 // (→ bottom-leading en RTL, géré par SwiftUI). Icône plus non directionnelle.
-                FloatingAddButton {
+                PersonalFloatingAddButton {
                     showAddSheet = true
                 }
                 .padding(.trailing, MoedSpace.pagePadding)
@@ -497,7 +497,7 @@ private struct RemindersOptInCard: View {
 /// FAB « Ajouter » (DESIGN §5.4) : verre flottant teinté flamme, halo `glowNer`,
 /// ancré bottom-trailing (logique → miroité en RTL). Le verre est le SEUL usage
 /// de chrome flottant ici (jamais sous du contenu de lecture — DESIGN §1).
-private struct FloatingAddButton: View {
+private struct PersonalFloatingAddButton: View {
 
     let action: () -> Void
 

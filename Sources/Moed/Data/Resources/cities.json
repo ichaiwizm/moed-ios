@@ -1,0 +1,3971 @@
+[
+  {
+    "slug": "paris",
+    "names": {
+      "he": "פריז",
+      "fr": "Paris",
+      "en": "Paris"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "elevation": 35,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 280000
+  },
+  {
+    "slug": "marseille",
+    "names": {
+      "he": "מרסיי",
+      "fr": "Marseille",
+      "en": "Marseille"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.2965,
+    "lng": 5.3698,
+    "elevation": 12,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 70000
+  },
+  {
+    "slug": "lyon",
+    "names": {
+      "he": "ליון",
+      "fr": "Lyon",
+      "en": "Lyon"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 45.764,
+    "lng": 4.8357,
+    "elevation": 170,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 25000
+  },
+  {
+    "slug": "nice",
+    "names": {
+      "he": "ניס",
+      "fr": "Nice",
+      "en": "Nice"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.7102,
+    "lng": 7.262,
+    "elevation": 10,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "sarcelles",
+    "names": {
+      "he": "סרסל",
+      "fr": "Sarcelles",
+      "en": "Sarcelles"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9964,
+    "lng": 2.3789,
+    "elevation": 55,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 15000
+  },
+  {
+    "slug": "creteil",
+    "names": {
+      "he": "קרטיי",
+      "fr": "Créteil",
+      "en": "Créteil"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.7904,
+    "lng": 2.4556,
+    "elevation": 48,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 12000
+  },
+  {
+    "slug": "strasbourg",
+    "names": {
+      "he": "שטרסבורג",
+      "fr": "Strasbourg",
+      "en": "Strasbourg"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.5734,
+    "lng": 7.7521,
+    "elevation": 142,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 15000
+  },
+  {
+    "slug": "toulouse",
+    "names": {
+      "he": "טולוז",
+      "fr": "Toulouse",
+      "en": "Toulouse"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.6045,
+    "lng": 1.4442,
+    "elevation": 146,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "villeurbanne",
+    "names": {
+      "he": "וילורבן",
+      "fr": "Villeurbanne",
+      "en": "Villeurbanne"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 45.7719,
+    "lng": 4.8902,
+    "elevation": 168,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 10000
+  },
+  {
+    "slug": "cannes",
+    "names": {
+      "he": "קאן",
+      "fr": "Cannes",
+      "en": "Cannes"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.5528,
+    "lng": 7.0174,
+    "elevation": 5,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 8000
+  },
+  {
+    "slug": "aix-en-provence",
+    "names": {
+      "he": "אקס-אן-פרובנס",
+      "fr": "Aix-en-Provence",
+      "en": "Aix-en-Provence"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.5297,
+    "lng": 5.4474,
+    "elevation": 173,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "metz",
+    "names": {
+      "he": "מץ",
+      "fr": "Metz",
+      "en": "Metz"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 49.1193,
+    "lng": 6.1757,
+    "elevation": 173,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "grenoble",
+    "names": {
+      "he": "גרנובל",
+      "fr": "Grenoble",
+      "en": "Grenoble"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 45.1885,
+    "lng": 5.7245,
+    "elevation": 212,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 6000
+  },
+  {
+    "slug": "montpellier",
+    "names": {
+      "he": "מונפלייה",
+      "fr": "Montpellier",
+      "en": "Montpellier"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.6108,
+    "lng": 3.8767,
+    "elevation": 27,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "boulogne-billancourt",
+    "names": {
+      "he": "בולון-ביאנקור",
+      "fr": "Boulogne-Billancourt",
+      "en": "Boulogne-Billancourt"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8352,
+    "lng": 2.2409,
+    "elevation": 35,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 8000
+  },
+  {
+    "slug": "saint-ouen",
+    "names": {
+      "he": "סן-אואן",
+      "fr": "Saint-Ouen",
+      "en": "Saint-Ouen"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9107,
+    "lng": 2.3336,
+    "elevation": 33,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "bagnolet",
+    "names": {
+      "he": "באניולה",
+      "fr": "Bagnolet",
+      "en": "Bagnolet"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8686,
+    "lng": 2.4189,
+    "elevation": 100,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "le-raincy",
+    "names": {
+      "he": "לה-רנסי",
+      "fr": "Le Raincy",
+      "en": "Le Raincy"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8974,
+    "lng": 2.5236,
+    "elevation": 62,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "antony",
+    "names": {
+      "he": "אנטוני",
+      "fr": "Antony",
+      "en": "Antony"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.7539,
+    "lng": 2.2976,
+    "elevation": 75,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "vincennes",
+    "names": {
+      "he": "ונסן",
+      "fr": "Vincennes",
+      "en": "Vincennes"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8478,
+    "lng": 2.4392,
+    "elevation": 50,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "nancy",
+    "names": {
+      "he": "נאנси",
+      "fr": "Nancy",
+      "en": "Nancy"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.6921,
+    "lng": 6.1844,
+    "elevation": 212,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "lille",
+    "names": {
+      "he": "ליל",
+      "fr": "Lille",
+      "en": "Lille"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 50.6292,
+    "lng": 3.0573,
+    "elevation": 20,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "bordeaux",
+    "names": {
+      "he": "בורדו",
+      "fr": "Bordeaux",
+      "en": "Bordeaux"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 44.8378,
+    "lng": -0.5792,
+    "elevation": 6,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "rouen",
+    "names": {
+      "he": "רואן",
+      "fr": "Rouen",
+      "en": "Rouen"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 49.4432,
+    "lng": 1.0993,
+    "elevation": 10,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "aubervilliers",
+    "names": {
+      "he": "אוברווילייה",
+      "fr": "Aubervilliers",
+      "en": "Aubervilliers"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9146,
+    "lng": 2.3822,
+    "elevation": 33,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "epinay-sur-seine",
+    "names": {
+      "he": "אפיניי",
+      "fr": "Épinay-sur-Seine",
+      "en": "Épinay-sur-Seine"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9547,
+    "lng": 2.3086,
+    "elevation": 30,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "livry-gargan",
+    "names": {
+      "he": "ליברי-גרגן",
+      "fr": "Livry-Gargan",
+      "en": "Livry-Gargan"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9192,
+    "lng": 2.5375,
+    "elevation": 60,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "noisy-le-sec",
+    "names": {
+      "he": "נואזי-לה-סק",
+      "fr": "Noisy-le-Sec",
+      "en": "Noisy-le-Sec"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.89,
+    "lng": 2.4497,
+    "elevation": 55,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "garges-les-gonesse",
+    "names": {
+      "he": "גארז",
+      "fr": "Garges-lès-Gonesse",
+      "en": "Garges-lès-Gonesse"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9731,
+    "lng": 2.4008,
+    "elevation": 50,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "pavillons-sous-bois",
+    "names": {
+      "he": "פביון-סו-בואה",
+      "fr": "Les Pavillons-sous-Bois",
+      "en": "Les Pavillons-sous-Bois"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9061,
+    "lng": 2.5061,
+    "elevation": 55,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "montreuil",
+    "names": {
+      "he": "מונטריי",
+      "fr": "Montreuil",
+      "en": "Montreuil"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8638,
+    "lng": 2.4485,
+    "elevation": 90,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "saint-mande",
+    "names": {
+      "he": "סן-מנדה",
+      "fr": "Saint-Mandé",
+      "en": "Saint-Mandé"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8419,
+    "lng": 2.4181,
+    "elevation": 50,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "neuilly-sur-seine",
+    "names": {
+      "he": "נويי",
+      "fr": "Neuilly-sur-Seine",
+      "en": "Neuilly-sur-Seine"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8846,
+    "lng": 2.2685,
+    "elevation": 34,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "clichy",
+    "names": {
+      "he": "קליشי",
+      "fr": "Clichy",
+      "en": "Clichy"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9044,
+    "lng": 2.3064,
+    "elevation": 32,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "asnieres-sur-seine",
+    "names": {
+      "he": "אנייר",
+      "fr": "Asnières-sur-Seine",
+      "en": "Asnières-sur-Seine"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9159,
+    "lng": 2.2853,
+    "elevation": 30,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "colombes",
+    "names": {
+      "he": "קולומב",
+      "fr": "Colombes",
+      "en": "Colombes"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9236,
+    "lng": 2.2544,
+    "elevation": 30,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "champigny-sur-marne",
+    "names": {
+      "he": "שמפיני",
+      "fr": "Champigny-sur-Marne",
+      "en": "Champigny-sur-Marne"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8172,
+    "lng": 2.5153,
+    "elevation": 50,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "fontenay-sous-bois",
+    "names": {
+      "he": "פונטני",
+      "fr": "Fontenay-sous-Bois",
+      "en": "Fontenay-sous-Bois"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8517,
+    "lng": 2.4772,
+    "elevation": 70,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "nogent-sur-marne",
+    "names": {
+      "he": "נוז'אן",
+      "fr": "Nogent-sur-Marne",
+      "en": "Nogent-sur-Marne"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8375,
+    "lng": 2.4822,
+    "elevation": 55,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "aulnay-sous-bois",
+    "names": {
+      "he": "אולני",
+      "fr": "Aulnay-sous-Bois",
+      "en": "Aulnay-sous-Bois"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9386,
+    "lng": 2.4939,
+    "elevation": 55,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "drancy",
+    "names": {
+      "he": "דראנסי",
+      "fr": "Drancy",
+      "en": "Drancy"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9231,
+    "lng": 2.4453,
+    "elevation": 50,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "bondy",
+    "names": {
+      "he": "בונדי",
+      "fr": "Bondy",
+      "en": "Bondy"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9022,
+    "lng": 2.4842,
+    "elevation": 50,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "rosny-sous-bois",
+    "names": {
+      "he": "רוזני",
+      "fr": "Rosny-sous-Bois",
+      "en": "Rosny-sous-Bois"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8711,
+    "lng": 2.4839,
+    "elevation": 80,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "gagny",
+    "names": {
+      "he": "גאני",
+      "fr": "Gagny",
+      "en": "Gagny"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.8825,
+    "lng": 2.5386,
+    "elevation": 90,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "meaux",
+    "names": {
+      "he": "מו",
+      "fr": "Meaux",
+      "en": "Meaux"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 48.9603,
+    "lng": 2.8783,
+    "elevation": 51,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "toulon",
+    "names": {
+      "he": "טולון",
+      "fr": "Toulon",
+      "en": "Toulon"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.1242,
+    "lng": 5.928,
+    "elevation": 10,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 4000
+  },
+  {
+    "slug": "antibes",
+    "names": {
+      "he": "אנטיב",
+      "fr": "Antibes",
+      "en": "Antibes"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.5808,
+    "lng": 7.1251,
+    "elevation": 10,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "menton",
+    "names": {
+      "he": "מנטון",
+      "fr": "Menton",
+      "en": "Menton"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.7765,
+    "lng": 7.5,
+    "elevation": 5,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 1000
+  },
+  {
+    "slug": "avignon",
+    "names": {
+      "he": "אביניון",
+      "fr": "Avignon",
+      "en": "Avignon"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.9493,
+    "lng": 4.8055,
+    "elevation": 23,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "perpignan",
+    "names": {
+      "he": "פרפיניאן",
+      "fr": "Perpignan",
+      "en": "Perpignan"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 42.6887,
+    "lng": 2.8948,
+    "elevation": 42,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "nimes",
+    "names": {
+      "he": "נים",
+      "fr": "Nîmes",
+      "en": "Nîmes"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 43.8367,
+    "lng": 4.3601,
+    "elevation": 39,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "dijon",
+    "names": {
+      "he": "דיז'ון",
+      "fr": "Dijon",
+      "en": "Dijon"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 47.322,
+    "lng": 5.0415,
+    "elevation": 245,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 1500
+  },
+  {
+    "slug": "mulhouse",
+    "names": {
+      "he": "מولוז",
+      "fr": "Mulhouse",
+      "en": "Mulhouse"
+    },
+    "country": "FR",
+    "countryNames": {
+      "he": "צרפת",
+      "fr": "France",
+      "en": "France"
+    },
+    "lat": 47.7508,
+    "lng": 7.3359,
+    "elevation": 240,
+    "tz": "Europe/Paris",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "jerusalem",
+    "names": {
+      "he": "ירושלים",
+      "fr": "Jérusalem",
+      "en": "Jerusalem"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.7683,
+    "lng": 35.2137,
+    "elevation": 754,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 40,
+    "community": 570000
+  },
+  {
+    "slug": "tel-aviv",
+    "names": {
+      "he": "תל אביב",
+      "fr": "Tel Aviv",
+      "en": "Tel Aviv"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0853,
+    "lng": 34.7818,
+    "elevation": 5,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 400000
+  },
+  {
+    "slug": "bnei-brak",
+    "names": {
+      "he": "בני ברק",
+      "fr": "Bnei Brak",
+      "en": "Bnei Brak"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0807,
+    "lng": 34.8338,
+    "elevation": 30,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 200000
+  },
+  {
+    "slug": "netanya",
+    "names": {
+      "he": "נתניה",
+      "fr": "Netanya",
+      "en": "Netanya"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.3215,
+    "lng": 34.8532,
+    "elevation": 30,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 220000
+  },
+  {
+    "slug": "ashdod",
+    "names": {
+      "he": "אשדוד",
+      "fr": "Ashdod",
+      "en": "Ashdod"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.8014,
+    "lng": 34.6435,
+    "elevation": 20,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 220000
+  },
+  {
+    "slug": "haifa",
+    "names": {
+      "he": "חיפה",
+      "fr": "Haïfa",
+      "en": "Haifa"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.794,
+    "lng": 34.9896,
+    "elevation": 300,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 30,
+    "community": 270000
+  },
+  {
+    "slug": "beer-sheva",
+    "names": {
+      "he": "באר שבע",
+      "fr": "Beer Sheva",
+      "en": "Beer Sheva"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.2518,
+    "lng": 34.7913,
+    "elevation": 260,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 30,
+    "community": 210000
+  },
+  {
+    "slug": "rishon-lezion",
+    "names": {
+      "he": "ראשון לציון",
+      "fr": "Rishon LeZion",
+      "en": "Rishon LeZion"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.9497,
+    "lng": 34.7899,
+    "elevation": 40,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 250000
+  },
+  {
+    "slug": "petah-tikva",
+    "names": {
+      "he": "פתח תקווה",
+      "fr": "Petah Tikva",
+      "en": "Petah Tikva"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0878,
+    "lng": 34.8878,
+    "elevation": 50,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 30,
+    "community": 250000
+  },
+  {
+    "slug": "herzliya",
+    "names": {
+      "he": "הרצליה",
+      "fr": "Herzliya",
+      "en": "Herzliya"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.1663,
+    "lng": 34.8436,
+    "elevation": 30,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 95000
+  },
+  {
+    "slug": "ramat-gan",
+    "names": {
+      "he": "רמת גן",
+      "fr": "Ramat Gan",
+      "en": "Ramat Gan"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0684,
+    "lng": 34.8248,
+    "elevation": 80,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 160000
+  },
+  {
+    "slug": "beit-shemesh",
+    "names": {
+      "he": "בית שמש",
+      "fr": "Beit Shemesh",
+      "en": "Beit Shemesh"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.7497,
+    "lng": 34.9886,
+    "elevation": 300,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 150000
+  },
+  {
+    "slug": "tiberias",
+    "names": {
+      "he": "טבריה",
+      "fr": "Tibériade",
+      "en": "Tiberias"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.7959,
+    "lng": 35.5312,
+    "elevation": -207,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 45000
+  },
+  {
+    "slug": "tsfat",
+    "names": {
+      "he": "צפת",
+      "fr": "Safed",
+      "en": "Safed"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.9646,
+    "lng": 35.496,
+    "elevation": 850,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 35000
+  },
+  {
+    "slug": "elad",
+    "names": {
+      "he": "אלעד",
+      "fr": "Elad",
+      "en": "Elad"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0522,
+    "lng": 34.9511,
+    "elevation": 130,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 50000
+  },
+  {
+    "slug": "modiin-illit",
+    "names": {
+      "he": "מודיעין עילית",
+      "fr": "Modiin Illit",
+      "en": "Modiin Illit"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.9319,
+    "lng": 35.0417,
+    "elevation": 320,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 80000
+  },
+  {
+    "slug": "rehovot",
+    "names": {
+      "he": "רחובות",
+      "fr": "Rehovot",
+      "en": "Rehovot"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.8928,
+    "lng": 34.8113,
+    "elevation": 76,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 145000
+  },
+  {
+    "slug": "ashkelon",
+    "names": {
+      "he": "אשקלון",
+      "fr": "Ashkelon",
+      "en": "Ashkelon"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.6688,
+    "lng": 34.5715,
+    "elevation": 40,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 145000
+  },
+  {
+    "slug": "eilat",
+    "names": {
+      "he": "אילת",
+      "fr": "Eilat",
+      "en": "Eilat"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 29.5577,
+    "lng": 34.9519,
+    "elevation": 12,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 52000
+  },
+  {
+    "slug": "holon",
+    "names": {
+      "he": "חולון",
+      "fr": "Holon",
+      "en": "Holon"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0158,
+    "lng": 34.7874,
+    "elevation": 25,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 195000
+  },
+  {
+    "slug": "bat-yam",
+    "names": {
+      "he": "בת ים",
+      "fr": "Bat Yam",
+      "en": "Bat Yam"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0231,
+    "lng": 34.7503,
+    "elevation": 15,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 130000
+  },
+  {
+    "slug": "kfar-saba",
+    "names": {
+      "he": "כפר סבא",
+      "fr": "Kfar Saba",
+      "en": "Kfar Saba"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.175,
+    "lng": 34.9069,
+    "elevation": 60,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 100000
+  },
+  {
+    "slug": "raanana",
+    "names": {
+      "he": "רעננה",
+      "fr": "Raanana",
+      "en": "Raanana"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.1848,
+    "lng": 34.8713,
+    "elevation": 71,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 75000
+  },
+  {
+    "slug": "modiin",
+    "names": {
+      "he": "מודיעין",
+      "fr": "Modiin",
+      "en": "Modiin"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.8969,
+    "lng": 35.0104,
+    "elevation": 270,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 90000
+  },
+  {
+    "slug": "lod",
+    "names": {
+      "he": "לוד",
+      "fr": "Lod",
+      "en": "Lod"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.9515,
+    "lng": 34.8956,
+    "elevation": 60,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 80000
+  },
+  {
+    "slug": "ramla",
+    "names": {
+      "he": "רמלה",
+      "fr": "Ramla",
+      "en": "Ramla"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.9288,
+    "lng": 34.8667,
+    "elevation": 76,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 75000
+  },
+  {
+    "slug": "nahariya",
+    "names": {
+      "he": "נהריה",
+      "fr": "Nahariya",
+      "en": "Nahariya"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 33.0058,
+    "lng": 35.0947,
+    "elevation": 20,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "akko",
+    "names": {
+      "he": "עכו",
+      "fr": "Acre",
+      "en": "Acre"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.9281,
+    "lng": 35.0818,
+    "elevation": 10,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 48000
+  },
+  {
+    "slug": "kiryat-gat",
+    "names": {
+      "he": "קרית גת",
+      "fr": "Kiryat Gat",
+      "en": "Kiryat Gat"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.61,
+    "lng": 34.7642,
+    "elevation": 140,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "afula",
+    "names": {
+      "he": "עפולה",
+      "fr": "Afula",
+      "en": "Afula"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.6078,
+    "lng": 35.2897,
+    "elevation": 60,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 55000
+  },
+  {
+    "slug": "hadera",
+    "names": {
+      "he": "חדרה",
+      "fr": "Hadera",
+      "en": "Hadera"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.4341,
+    "lng": 34.9196,
+    "elevation": 30,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 100000
+  },
+  {
+    "slug": "nazareth-illit",
+    "names": {
+      "he": "נוף הגליל",
+      "fr": "Nof HaGalil",
+      "en": "Nof HaGalil"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.7089,
+    "lng": 35.3178,
+    "elevation": 400,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 41000
+  },
+  {
+    "slug": "givatayim",
+    "names": {
+      "he": "גבעתיים",
+      "fr": "Givatayim",
+      "en": "Givatayim"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.0722,
+    "lng": 34.8125,
+    "elevation": 80,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "kiryat-ata",
+    "names": {
+      "he": "קרית אתא",
+      "fr": "Kiryat Ata",
+      "en": "Kiryat Ata"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.8006,
+    "lng": 35.1075,
+    "elevation": 100,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "yavne",
+    "names": {
+      "he": "יבנה",
+      "fr": "Yavné",
+      "en": "Yavne"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.8779,
+    "lng": 34.7392,
+    "elevation": 30,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 51000
+  },
+  {
+    "slug": "dimona",
+    "names": {
+      "he": "דימונה",
+      "fr": "Dimona",
+      "en": "Dimona"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.0686,
+    "lng": 35.0327,
+    "elevation": 570,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 35000
+  },
+  {
+    "slug": "meron",
+    "names": {
+      "he": "מירון",
+      "fr": "Méron",
+      "en": "Meron"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.9856,
+    "lng": 35.4392,
+    "elevation": 700,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 1000
+  },
+  {
+    "slug": "kiryat-shmona",
+    "names": {
+      "he": "קרית שמונה",
+      "fr": "Kiryat Shmona",
+      "en": "Kiryat Shmona"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 33.2075,
+    "lng": 35.5695,
+    "elevation": 120,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 24000
+  },
+  {
+    "slug": "maale-adumim",
+    "names": {
+      "he": "מעלה אדומים",
+      "fr": "Maale Adumim",
+      "en": "Maale Adumim"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 31.7728,
+    "lng": 35.2986,
+    "elevation": 490,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 40000
+  },
+  {
+    "slug": "ariel",
+    "names": {
+      "he": "אריאל",
+      "fr": "Ariel",
+      "en": "Ariel"
+    },
+    "country": "IL",
+    "countryNames": {
+      "he": "ישראל",
+      "fr": "Israël",
+      "en": "Israel"
+    },
+    "lat": 32.1053,
+    "lng": 35.1739,
+    "elevation": 500,
+    "tz": "Asia/Jerusalem",
+    "israel": true,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "new-york",
+    "names": {
+      "he": "ניו יורק",
+      "fr": "New York",
+      "en": "New York"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.7128,
+    "lng": -74.006,
+    "elevation": 10,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 1500000
+  },
+  {
+    "slug": "brooklyn",
+    "names": {
+      "he": "ברוקלין",
+      "fr": "Brooklyn",
+      "en": "Brooklyn"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.6782,
+    "lng": -73.9442,
+    "elevation": 15,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 600000
+  },
+  {
+    "slug": "miami",
+    "names": {
+      "he": "מיאמי",
+      "fr": "Miami",
+      "en": "Miami"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "elevation": 2,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 120000
+  },
+  {
+    "slug": "miami-beach",
+    "names": {
+      "he": "מיאמי ביץ׳",
+      "fr": "Miami Beach",
+      "en": "Miami Beach"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 25.7907,
+    "lng": -80.13,
+    "elevation": 2,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 40000
+  },
+  {
+    "slug": "los-angeles",
+    "names": {
+      "he": "לוס אנג׳לס",
+      "fr": "Los Angeles",
+      "en": "Los Angeles"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "elevation": 89,
+    "tz": "America/Los_Angeles",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 520000
+  },
+  {
+    "slug": "lakewood",
+    "names": {
+      "he": "לייקווד",
+      "fr": "Lakewood",
+      "en": "Lakewood"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.0979,
+    "lng": -74.2176,
+    "elevation": 15,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 100000
+  },
+  {
+    "slug": "chicago",
+    "names": {
+      "he": "שיקגו",
+      "fr": "Chicago",
+      "en": "Chicago"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "elevation": 182,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 290000
+  },
+  {
+    "slug": "boca-raton",
+    "names": {
+      "he": "בוקה רטון",
+      "fr": "Boca Raton",
+      "en": "Boca Raton"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 26.3683,
+    "lng": -80.1289,
+    "elevation": 4,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 50000
+  },
+  {
+    "slug": "monsey",
+    "names": {
+      "he": "מונסי",
+      "fr": "Monsey",
+      "en": "Monsey"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.1112,
+    "lng": -74.0687,
+    "elevation": 150,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 45000
+  },
+  {
+    "slug": "baltimore",
+    "names": {
+      "he": "בולטימור",
+      "fr": "Baltimore",
+      "en": "Baltimore"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "elevation": 10,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 90000
+  },
+  {
+    "slug": "teaneck",
+    "names": {
+      "he": "טינק",
+      "fr": "Teaneck",
+      "en": "Teaneck"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.8976,
+    "lng": -74.016,
+    "elevation": 20,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 25000
+  },
+  {
+    "slug": "cedarhurst",
+    "names": {
+      "he": "סידרהרסט",
+      "fr": "Cedarhurst",
+      "en": "Cedarhurst"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.6223,
+    "lng": -73.7243,
+    "elevation": 5,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 15000
+  },
+  {
+    "slug": "great-neck",
+    "names": {
+      "he": "גרייט נק",
+      "fr": "Great Neck",
+      "en": "Great Neck"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.8007,
+    "lng": -73.7285,
+    "elevation": 30,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "passaic",
+    "names": {
+      "he": "פסייק",
+      "fr": "Passaic",
+      "en": "Passaic"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.8568,
+    "lng": -74.1285,
+    "elevation": 30,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "silver-spring",
+    "names": {
+      "he": "סילבר ספרינג",
+      "fr": "Silver Spring",
+      "en": "Silver Spring"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 38.9907,
+    "lng": -77.0261,
+    "elevation": 100,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 25000
+  },
+  {
+    "slug": "houston",
+    "names": {
+      "he": "יוסטון",
+      "fr": "Houston",
+      "en": "Houston"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "elevation": 12,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 63000
+  },
+  {
+    "slug": "atlanta",
+    "names": {
+      "he": "אטלנטה",
+      "fr": "Atlanta",
+      "en": "Atlanta"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 33.749,
+    "lng": -84.388,
+    "elevation": 320,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 120000
+  },
+  {
+    "slug": "philadelphia",
+    "names": {
+      "he": "פילדלפיה",
+      "fr": "Philadelphie",
+      "en": "Philadelphia"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 39.9526,
+    "lng": -75.1652,
+    "elevation": 12,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 215000
+  },
+  {
+    "slug": "boston",
+    "names": {
+      "he": "בוסטון",
+      "fr": "Boston",
+      "en": "Boston"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "elevation": 43,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 250000
+  },
+  {
+    "slug": "las-vegas",
+    "names": {
+      "he": "לאס וגאס",
+      "fr": "Las Vegas",
+      "en": "Las Vegas"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "elevation": 610,
+    "tz": "America/Los_Angeles",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 70000
+  },
+  {
+    "slug": "san-francisco",
+    "names": {
+      "he": "סן פרנסיסקו",
+      "fr": "San Francisco",
+      "en": "San Francisco"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "elevation": 16,
+    "tz": "America/Los_Angeles",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 250000
+  },
+  {
+    "slug": "phoenix",
+    "names": {
+      "he": "פיניקס",
+      "fr": "Phoenix",
+      "en": "Phoenix"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 33.4484,
+    "lng": -112.074,
+    "elevation": 331,
+    "tz": "America/Phoenix",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 83000
+  },
+  {
+    "slug": "denver",
+    "names": {
+      "he": "דנוור",
+      "fr": "Denver",
+      "en": "Denver"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 39.7392,
+    "lng": -104.9903,
+    "elevation": 1609,
+    "tz": "America/Denver",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 90000
+  },
+  {
+    "slug": "washington-dc",
+    "names": {
+      "he": "וושינגטון",
+      "fr": "Washington",
+      "en": "Washington D.C."
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "elevation": 25,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 300000
+  },
+  {
+    "slug": "detroit",
+    "names": {
+      "he": "דטרויט",
+      "fr": "Détroit",
+      "en": "Detroit"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "elevation": 183,
+    "tz": "America/Detroit",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 72000
+  },
+  {
+    "slug": "cleveland",
+    "names": {
+      "he": "קליבלנד",
+      "fr": "Cleveland",
+      "en": "Cleveland"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.4993,
+    "lng": -81.6944,
+    "elevation": 199,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 80000
+  },
+  {
+    "slug": "st-louis",
+    "names": {
+      "he": "סנט לואיס",
+      "fr": "Saint-Louis",
+      "en": "St. Louis"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 38.627,
+    "lng": -90.1994,
+    "elevation": 142,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "seattle",
+    "names": {
+      "he": "סיאטל",
+      "fr": "Seattle",
+      "en": "Seattle"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "elevation": 53,
+    "tz": "America/Los_Angeles",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 63000
+  },
+  {
+    "slug": "san-diego",
+    "names": {
+      "he": "סן דייגו",
+      "fr": "San Diego",
+      "en": "San Diego"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 32.7157,
+    "lng": -117.1611,
+    "elevation": 20,
+    "tz": "America/Los_Angeles",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 100000
+  },
+  {
+    "slug": "dallas",
+    "names": {
+      "he": "דאלאס",
+      "fr": "Dallas",
+      "en": "Dallas"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 32.7767,
+    "lng": -96.797,
+    "elevation": 131,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 70000
+  },
+  {
+    "slug": "pittsburgh",
+    "names": {
+      "he": "פיטסבורג",
+      "fr": "Pittsburgh",
+      "en": "Pittsburgh"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.4406,
+    "lng": -79.9959,
+    "elevation": 230,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 50000
+  },
+  {
+    "slug": "minneapolis",
+    "names": {
+      "he": "מיניאפוליס",
+      "fr": "Minneapolis",
+      "en": "Minneapolis"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 44.9778,
+    "lng": -93.265,
+    "elevation": 264,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 45000
+  },
+  {
+    "slug": "columbus",
+    "names": {
+      "he": "קולומבוס",
+      "fr": "Columbus",
+      "en": "Columbus"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 39.9612,
+    "lng": -82.9988,
+    "elevation": 275,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 25000
+  },
+  {
+    "slug": "cincinnati",
+    "names": {
+      "he": "סינסינטי",
+      "fr": "Cincinnati",
+      "en": "Cincinnati"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 39.1031,
+    "lng": -84.512,
+    "elevation": 148,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 27000
+  },
+  {
+    "slug": "kansas-city",
+    "names": {
+      "he": "קנזס סיטי",
+      "fr": "Kansas City",
+      "en": "Kansas City"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 39.0997,
+    "lng": -94.5786,
+    "elevation": 277,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "portland",
+    "names": {
+      "he": "פורטלנד",
+      "fr": "Portland",
+      "en": "Portland"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "elevation": 15,
+    "tz": "America/Los_Angeles",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 40000
+  },
+  {
+    "slug": "hollywood-fl",
+    "names": {
+      "he": "הוליווד",
+      "fr": "Hollywood",
+      "en": "Hollywood"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 26.0112,
+    "lng": -80.1495,
+    "elevation": 3,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 30000
+  },
+  {
+    "slug": "aventura",
+    "names": {
+      "he": "אוונטורה",
+      "fr": "Aventura",
+      "en": "Aventura"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 25.9565,
+    "lng": -80.139,
+    "elevation": 3,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "north-miami-beach",
+    "names": {
+      "he": "נורת׳ מיאמי ביץ׳",
+      "fr": "North Miami Beach",
+      "en": "North Miami Beach"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 25.9331,
+    "lng": -80.1625,
+    "elevation": 3,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "far-rockaway",
+    "names": {
+      "he": "פאר רוקאווי",
+      "fr": "Far Rockaway",
+      "en": "Far Rockaway"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.6046,
+    "lng": -73.7551,
+    "elevation": 5,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "kew-gardens-hills",
+    "names": {
+      "he": "קיו גרדנס הילס",
+      "fr": "Kew Gardens Hills",
+      "en": "Kew Gardens Hills"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 40.7266,
+    "lng": -73.8213,
+    "elevation": 20,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 25000
+  },
+  {
+    "slug": "spring-valley",
+    "names": {
+      "he": "ספרינג ואלי",
+      "fr": "Spring Valley",
+      "en": "Spring Valley"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.1132,
+    "lng": -74.0438,
+    "elevation": 150,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "new-square",
+    "names": {
+      "he": "ניו סקוור",
+      "fr": "New Square",
+      "en": "New Square"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.1401,
+    "lng": -74.0293,
+    "elevation": 140,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 8000
+  },
+  {
+    "slug": "kiryas-joel",
+    "names": {
+      "he": "קרית יואל",
+      "fr": "Kiryas Joel",
+      "en": "Kiryas Joel"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.3403,
+    "lng": -74.1663,
+    "elevation": 150,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 30000
+  },
+  {
+    "slug": "monroe-ny",
+    "names": {
+      "he": "מונרו",
+      "fr": "Monroe",
+      "en": "Monroe"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.3306,
+    "lng": -74.1868,
+    "elevation": 200,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 10000
+  },
+  {
+    "slug": "waterbury",
+    "names": {
+      "he": "ווטרברי",
+      "fr": "Waterbury",
+      "en": "Waterbury"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.5582,
+    "lng": -73.0515,
+    "elevation": 80,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "memphis",
+    "names": {
+      "he": "ממפיס",
+      "fr": "Memphis",
+      "en": "Memphis"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 35.1495,
+    "lng": -90.049,
+    "elevation": 103,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 10000
+  },
+  {
+    "slug": "new-orleans",
+    "names": {
+      "he": "ניו אורלינס",
+      "fr": "La Nouvelle-Orléans",
+      "en": "New Orleans"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 29.9511,
+    "lng": -90.0715,
+    "elevation": 1,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 12000
+  },
+  {
+    "slug": "austin",
+    "names": {
+      "he": "אוסטין",
+      "fr": "Austin",
+      "en": "Austin"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "elevation": 149,
+    "tz": "America/Chicago",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "providence",
+    "names": {
+      "he": "פרובידנס",
+      "fr": "Providence",
+      "en": "Providence"
+    },
+    "country": "US",
+    "countryNames": {
+      "he": "ארצות הברית",
+      "fr": "États-Unis",
+      "en": "United States"
+    },
+    "lat": 41.824,
+    "lng": -71.4128,
+    "elevation": 7,
+    "tz": "America/New_York",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "london",
+    "names": {
+      "he": "לונדון",
+      "fr": "Londres",
+      "en": "London"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "elevation": 11,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 200000
+  },
+  {
+    "slug": "manchester",
+    "names": {
+      "he": "מנצ׳סטר",
+      "fr": "Manchester",
+      "en": "Manchester"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 53.4808,
+    "lng": -2.2426,
+    "elevation": 38,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 30000
+  },
+  {
+    "slug": "gateshead",
+    "names": {
+      "he": "גייטסהד",
+      "fr": "Gateshead",
+      "en": "Gateshead"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 54.9526,
+    "lng": -1.6033,
+    "elevation": 45,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 8000
+  },
+  {
+    "slug": "leeds",
+    "names": {
+      "he": "לידס",
+      "fr": "Leeds",
+      "en": "Leeds"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 53.8008,
+    "lng": -1.5491,
+    "elevation": 60,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 7000
+  },
+  {
+    "slug": "salford",
+    "names": {
+      "he": "סלפורד",
+      "fr": "Salford",
+      "en": "Salford"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 53.4875,
+    "lng": -2.2901,
+    "elevation": 35,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 10000
+  },
+  {
+    "slug": "edgware",
+    "names": {
+      "he": "אדגוור",
+      "fr": "Edgware",
+      "en": "Edgware"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 51.6134,
+    "lng": -0.275,
+    "elevation": 80,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "golders-green",
+    "names": {
+      "he": "גולדרס גרין",
+      "fr": "Golders Green",
+      "en": "Golders Green"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 51.5721,
+    "lng": -0.1943,
+    "elevation": 70,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "stamford-hill",
+    "names": {
+      "he": "סטמפורד היל",
+      "fr": "Stamford Hill",
+      "en": "Stamford Hill"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 51.568,
+    "lng": -0.0713,
+    "elevation": 30,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 30000
+  },
+  {
+    "slug": "glasgow",
+    "names": {
+      "he": "גלזגו",
+      "fr": "Glasgow",
+      "en": "Glasgow"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "elevation": 40,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "liverpool",
+    "names": {
+      "he": "ליברפול",
+      "fr": "Liverpool",
+      "en": "Liverpool"
+    },
+    "country": "GB",
+    "countryNames": {
+      "he": "בריטניה",
+      "fr": "Royaume-Uni",
+      "en": "United Kingdom"
+    },
+    "lat": 53.4084,
+    "lng": -2.9916,
+    "elevation": 20,
+    "tz": "Europe/London",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "montreal",
+    "names": {
+      "he": "מונטריאול",
+      "fr": "Montréal",
+      "en": "Montreal"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 45.5017,
+    "lng": -73.5673,
+    "elevation": 36,
+    "tz": "America/Toronto",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 90000
+  },
+  {
+    "slug": "toronto",
+    "names": {
+      "he": "טורונטו",
+      "fr": "Toronto",
+      "en": "Toronto"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 43.6532,
+    "lng": -79.3832,
+    "elevation": 76,
+    "tz": "America/Toronto",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 190000
+  },
+  {
+    "slug": "cote-saint-luc",
+    "names": {
+      "he": "קוט סנט לוק",
+      "fr": "Côte-Saint-Luc",
+      "en": "Côte-Saint-Luc"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 45.4694,
+    "lng": -73.6653,
+    "elevation": 55,
+    "tz": "America/Toronto",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "thornhill",
+    "names": {
+      "he": "ת׳ורנהיל",
+      "fr": "Thornhill",
+      "en": "Thornhill"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 43.815,
+    "lng": -79.4247,
+    "elevation": 190,
+    "tz": "America/Toronto",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 30000
+  },
+  {
+    "slug": "ottawa",
+    "names": {
+      "he": "אוטווה",
+      "fr": "Ottawa",
+      "en": "Ottawa"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 45.4215,
+    "lng": -75.6972,
+    "elevation": 70,
+    "tz": "America/Toronto",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 14000
+  },
+  {
+    "slug": "vancouver",
+    "names": {
+      "he": "ונקובר",
+      "fr": "Vancouver",
+      "en": "Vancouver"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 49.2827,
+    "lng": -123.1207,
+    "elevation": 70,
+    "tz": "America/Vancouver",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 26000
+  },
+  {
+    "slug": "winnipeg",
+    "names": {
+      "he": "וויניפג",
+      "fr": "Winnipeg",
+      "en": "Winnipeg"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 49.8951,
+    "lng": -97.1384,
+    "elevation": 232,
+    "tz": "America/Winnipeg",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 14000
+  },
+  {
+    "slug": "hampstead-qc",
+    "names": {
+      "he": "המפסטד",
+      "fr": "Hampstead",
+      "en": "Hampstead"
+    },
+    "country": "CA",
+    "countryNames": {
+      "he": "קנדה",
+      "fr": "Canada",
+      "en": "Canada"
+    },
+    "lat": 45.4833,
+    "lng": -73.6333,
+    "elevation": 60,
+    "tz": "America/Toronto",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 7000
+  },
+  {
+    "slug": "antwerp",
+    "names": {
+      "he": "אנטוורפן",
+      "fr": "Anvers",
+      "en": "Antwerp"
+    },
+    "country": "BE",
+    "countryNames": {
+      "he": "בלגיה",
+      "fr": "Belgique",
+      "en": "Belgium"
+    },
+    "lat": 51.2194,
+    "lng": 4.4025,
+    "elevation": 7,
+    "tz": "Europe/Brussels",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 20000
+  },
+  {
+    "slug": "brussels",
+    "names": {
+      "he": "בריסל",
+      "fr": "Bruxelles",
+      "en": "Brussels"
+    },
+    "country": "BE",
+    "countryNames": {
+      "he": "בלגיה",
+      "fr": "Belgique",
+      "en": "Belgium"
+    },
+    "lat": 50.8503,
+    "lng": 4.3517,
+    "elevation": 28,
+    "tz": "Europe/Brussels",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 15000
+  },
+  {
+    "slug": "geneva",
+    "names": {
+      "he": "ז׳נבה",
+      "fr": "Genève",
+      "en": "Geneva"
+    },
+    "country": "CH",
+    "countryNames": {
+      "he": "שווייץ",
+      "fr": "Suisse",
+      "en": "Switzerland"
+    },
+    "lat": 46.2044,
+    "lng": 6.1432,
+    "elevation": 375,
+    "tz": "Europe/Zurich",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 5000
+  },
+  {
+    "slug": "zurich",
+    "names": {
+      "he": "ציריך",
+      "fr": "Zurich",
+      "en": "Zurich"
+    },
+    "country": "CH",
+    "countryNames": {
+      "he": "שווייץ",
+      "fr": "Suisse",
+      "en": "Switzerland"
+    },
+    "lat": 47.3769,
+    "lng": 8.5417,
+    "elevation": 408,
+    "tz": "Europe/Zurich",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 12000
+  },
+  {
+    "slug": "lausanne",
+    "names": {
+      "he": "לוזאן",
+      "fr": "Lausanne",
+      "en": "Lausanne"
+    },
+    "country": "CH",
+    "countryNames": {
+      "he": "שווייץ",
+      "fr": "Suisse",
+      "en": "Switzerland"
+    },
+    "lat": 46.5197,
+    "lng": 6.6323,
+    "elevation": 495,
+    "tz": "Europe/Zurich",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 3000
+  },
+  {
+    "slug": "basel",
+    "names": {
+      "he": "בזל",
+      "fr": "Bâle",
+      "en": "Basel"
+    },
+    "country": "CH",
+    "countryNames": {
+      "he": "שווייץ",
+      "fr": "Suisse",
+      "en": "Switzerland"
+    },
+    "lat": 47.5596,
+    "lng": 7.5886,
+    "elevation": 260,
+    "tz": "Europe/Zurich",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "buenos-aires",
+    "names": {
+      "he": "בואנוס איירס",
+      "fr": "Buenos Aires",
+      "en": "Buenos Aires"
+    },
+    "country": "AR",
+    "countryNames": {
+      "he": "ארגנטינה",
+      "fr": "Argentine",
+      "en": "Argentina"
+    },
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "elevation": 25,
+    "tz": "America/Argentina/Buenos_Aires",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 180000
+  },
+  {
+    "slug": "melbourne",
+    "names": {
+      "he": "מלבורן",
+      "fr": "Melbourne",
+      "en": "Melbourne"
+    },
+    "country": "AU",
+    "countryNames": {
+      "he": "אוסטרליה",
+      "fr": "Australie",
+      "en": "Australia"
+    },
+    "lat": -37.8136,
+    "lng": 144.9631,
+    "elevation": 31,
+    "tz": "Australia/Melbourne",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "sydney",
+    "names": {
+      "he": "סידני",
+      "fr": "Sydney",
+      "en": "Sydney"
+    },
+    "country": "AU",
+    "countryNames": {
+      "he": "אוסטרליה",
+      "fr": "Australie",
+      "en": "Australia"
+    },
+    "lat": -33.8688,
+    "lng": 151.2093,
+    "elevation": 19,
+    "tz": "Australia/Sydney",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 45000
+  },
+  {
+    "slug": "casablanca",
+    "names": {
+      "he": "קזבלנקה",
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "country": "MA",
+    "countryNames": {
+      "he": "מרוקו",
+      "fr": "Maroc",
+      "en": "Morocco"
+    },
+    "lat": 33.5731,
+    "lng": -7.5898,
+    "elevation": 27,
+    "tz": "Africa/Casablanca",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 2000
+  },
+  {
+    "slug": "marrakech",
+    "names": {
+      "he": "מרקש",
+      "fr": "Marrakech",
+      "en": "Marrakech"
+    },
+    "country": "MA",
+    "countryNames": {
+      "he": "מרוקו",
+      "fr": "Maroc",
+      "en": "Morocco"
+    },
+    "lat": 31.6295,
+    "lng": -7.9811,
+    "elevation": 466,
+    "tz": "Africa/Casablanca",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 300
+  },
+  {
+    "slug": "amsterdam",
+    "names": {
+      "he": "אמסטרדם",
+      "fr": "Amsterdam",
+      "en": "Amsterdam"
+    },
+    "country": "NL",
+    "countryNames": {
+      "he": "הולנד",
+      "fr": "Pays-Bas",
+      "en": "Netherlands"
+    },
+    "lat": 52.3676,
+    "lng": 4.9041,
+    "elevation": 2,
+    "tz": "Europe/Amsterdam",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 15000
+  },
+  {
+    "slug": "berlin",
+    "names": {
+      "he": "ברלין",
+      "fr": "Berlin",
+      "en": "Berlin"
+    },
+    "country": "DE",
+    "countryNames": {
+      "he": "גרמניה",
+      "fr": "Allemagne",
+      "en": "Germany"
+    },
+    "lat": 52.52,
+    "lng": 13.405,
+    "elevation": 34,
+    "tz": "Europe/Berlin",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 30000
+  },
+  {
+    "slug": "frankfurt",
+    "names": {
+      "he": "פרנקפורט",
+      "fr": "Francfort",
+      "en": "Frankfurt"
+    },
+    "country": "DE",
+    "countryNames": {
+      "he": "גרמניה",
+      "fr": "Allemagne",
+      "en": "Germany"
+    },
+    "lat": 50.1109,
+    "lng": 8.6821,
+    "elevation": 112,
+    "tz": "Europe/Berlin",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 7000
+  },
+  {
+    "slug": "munich",
+    "names": {
+      "he": "מינכן",
+      "fr": "Munich",
+      "en": "Munich"
+    },
+    "country": "DE",
+    "countryNames": {
+      "he": "גרמניה",
+      "fr": "Allemagne",
+      "en": "Germany"
+    },
+    "lat": 48.1351,
+    "lng": 11.582,
+    "elevation": 520,
+    "tz": "Europe/Berlin",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 9000
+  },
+  {
+    "slug": "rome",
+    "names": {
+      "he": "רומא",
+      "fr": "Rome",
+      "en": "Rome"
+    },
+    "country": "IT",
+    "countryNames": {
+      "he": "איטליה",
+      "fr": "Italie",
+      "en": "Italy"
+    },
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "elevation": 21,
+    "tz": "Europe/Rome",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 15000
+  },
+  {
+    "slug": "milan",
+    "names": {
+      "he": "מילאנו",
+      "fr": "Milan",
+      "en": "Milan"
+    },
+    "country": "IT",
+    "countryNames": {
+      "he": "איטליה",
+      "fr": "Italie",
+      "en": "Italy"
+    },
+    "lat": 45.4642,
+    "lng": 9.19,
+    "elevation": 120,
+    "tz": "Europe/Rome",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 10000
+  },
+  {
+    "slug": "madrid",
+    "names": {
+      "he": "מדריד",
+      "fr": "Madrid",
+      "en": "Madrid"
+    },
+    "country": "ES",
+    "countryNames": {
+      "he": "ספרד",
+      "fr": "Espagne",
+      "en": "Spain"
+    },
+    "lat": 40.4168,
+    "lng": -3.7038,
+    "elevation": 667,
+    "tz": "Europe/Madrid",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 12000
+  },
+  {
+    "slug": "barcelona",
+    "names": {
+      "he": "ברצלונה",
+      "fr": "Barcelone",
+      "en": "Barcelona"
+    },
+    "country": "ES",
+    "countryNames": {
+      "he": "ספרד",
+      "fr": "Espagne",
+      "en": "Spain"
+    },
+    "lat": 41.3874,
+    "lng": 2.1686,
+    "elevation": 12,
+    "tz": "Europe/Madrid",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 10000
+  },
+  {
+    "slug": "sao-paulo",
+    "names": {
+      "he": "סאו פאולו",
+      "fr": "São Paulo",
+      "en": "São Paulo"
+    },
+    "country": "BR",
+    "countryNames": {
+      "he": "ברזיל",
+      "fr": "Brésil",
+      "en": "Brazil"
+    },
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "elevation": 760,
+    "tz": "America/Sao_Paulo",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "rio-de-janeiro",
+    "names": {
+      "he": "ריו דה ז׳ניירו",
+      "fr": "Rio de Janeiro",
+      "en": "Rio de Janeiro"
+    },
+    "country": "BR",
+    "countryNames": {
+      "he": "ברזיל",
+      "fr": "Brésil",
+      "en": "Brazil"
+    },
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "elevation": 2,
+    "tz": "America/Sao_Paulo",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 25000
+  },
+  {
+    "slug": "johannesburg",
+    "names": {
+      "he": "יוהנסבורג",
+      "fr": "Johannesbourg",
+      "en": "Johannesburg"
+    },
+    "country": "ZA",
+    "countryNames": {
+      "he": "דרום אפריקה",
+      "fr": "Afrique du Sud",
+      "en": "South Africa"
+    },
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "elevation": 1753,
+    "tz": "Africa/Johannesburg",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 50000
+  },
+  {
+    "slug": "cape-town",
+    "names": {
+      "he": "קייפטאון",
+      "fr": "Le Cap",
+      "en": "Cape Town"
+    },
+    "country": "ZA",
+    "countryNames": {
+      "he": "דרום אפריקה",
+      "fr": "Afrique du Sud",
+      "en": "South Africa"
+    },
+    "lat": -33.9249,
+    "lng": 18.4241,
+    "elevation": 25,
+    "tz": "Africa/Johannesburg",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 16000
+  },
+  {
+    "slug": "moscow",
+    "names": {
+      "he": "מוסקבה",
+      "fr": "Moscou",
+      "en": "Moscow"
+    },
+    "country": "RU",
+    "countryNames": {
+      "he": "רוסיה",
+      "fr": "Russie",
+      "en": "Russia"
+    },
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "elevation": 156,
+    "tz": "Europe/Moscow",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 100000
+  },
+  {
+    "slug": "saint-petersburg",
+    "names": {
+      "he": "סנקט פטרבורג",
+      "fr": "Saint-Pétersbourg",
+      "en": "Saint Petersburg"
+    },
+    "country": "RU",
+    "countryNames": {
+      "he": "רוסיה",
+      "fr": "Russie",
+      "en": "Russia"
+    },
+    "lat": 59.9311,
+    "lng": 30.3609,
+    "elevation": 3,
+    "tz": "Europe/Moscow",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 60000
+  },
+  {
+    "slug": "kyiv",
+    "names": {
+      "he": "קייב",
+      "fr": "Kiev",
+      "en": "Kyiv"
+    },
+    "country": "UA",
+    "countryNames": {
+      "he": "אוקראינה",
+      "fr": "Ukraine",
+      "en": "Ukraine"
+    },
+    "lat": 50.4501,
+    "lng": 30.5234,
+    "elevation": 179,
+    "tz": "Europe/Kyiv",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 50000
+  },
+  {
+    "slug": "uman",
+    "names": {
+      "he": "אומן",
+      "fr": "Ouman",
+      "en": "Uman"
+    },
+    "country": "UA",
+    "countryNames": {
+      "he": "אוקראינה",
+      "fr": "Ukraine",
+      "en": "Ukraine"
+    },
+    "lat": 48.7484,
+    "lng": 30.2216,
+    "elevation": 214,
+    "tz": "Europe/Kyiv",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 1000
+  },
+  {
+    "slug": "mexico-city",
+    "names": {
+      "he": "מקסיקו סיטי",
+      "fr": "Mexico",
+      "en": "Mexico City"
+    },
+    "country": "MX",
+    "countryNames": {
+      "he": "מקסיקו",
+      "fr": "Mexique",
+      "en": "Mexico"
+    },
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "elevation": 2240,
+    "tz": "America/Mexico_City",
+    "israel": false,
+    "candleMinutes": 18,
+    "community": 40000
+  }
+]

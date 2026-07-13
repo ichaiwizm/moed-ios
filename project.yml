@@ -1,0 +1,143 @@
+# project.yml — génération du projet Xcode via XcodeGen (PLAN.md §9).
+# Le .xcodeproj n'est PAS commité : la CI le régénère (`xcodegen generate`).
+#
+# Cibles :
+#   • Moed         — application SwiftUI (iOS 17+)
+#   • MoedWidgets  — extension WidgetKit (Allumage / Zmanim / Omer)
+#   • MoedTests    — tests unitaires + validation halakhique (matrice 10 villes × 2 ans)
+#
+# Partage app ↔ widget : les dossiers Engine/, Data/ et les tokens couleur sont
+# inclus dans les DEUX cibles via double target membership (Sources/Shared), pas
+# de framework dynamique séparé (CONTRACTS §4.4, PLAN §1).
+#
+# Dépendance runtime UNIQUE : KosherCocoa (SPM) — parité kosher-zmanim / KosherJava.
+
+name: Moed
+
+options:
+  bundleIdPrefix: com.wizycode
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+  groupSortPosition: top
+  developmentLanguage: fr          # région de base ; localisations he/fr/en (Info.plist + *.lproj)
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0.0"
+    # Numéro de build injecté par la CI : xcodebuild résout $(BUILD_NUMBER) depuis
+    # l'environnement (workflow → github.run_number, exporté dans $GITHUB_ENV).
+    # Remplace increment_build_number. NE PAS définir BUILD_NUMBER ici : une valeur
+    # projet écraserait la variable d'environnement (précédence Xcode). En local
+    # (BUILD_NUMBER absent) CFBundleVersion est vide — sans impact sur un build Debug.
+    CURRENT_PROJECT_VERSION: "$(BUILD_NUMBER)"
+    # Équipe de signature injectée par la CI (secret TEAM_ID → env). Vide en local.
+    # Le Fastfile réécrit aussi DEVELOPMENT_TEAM via update_code_signing_settings.
+    DEVELOPMENT_TEAM: "$(TEAM_ID)"
+    SWIFT_VERSION: "5.9"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    TARGETED_DEVICE_FAMILY: "1,2"   # iPhone + iPad
+
+packages:
+  KosherCocoa:
+    url: https://github.com/MosheBerman/KosherCocoa
+    from: "4.0.0"
+
+targets:
+
+  # ─────────────────────────────────────────────────────────────
+  # Application
+  # ─────────────────────────────────────────────────────────────
+  Moed:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/Moed
+      - path: Sources/Shared      # Engine + Data + tokens partagés (double membership)
+    dependencies:
+      - package: KosherCocoa
+      - target: MoedWidgets
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed
+        INFOPLIST_FILE: Sources/Moed/App/Info.plist
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_ENTITLEMENTS: Sources/Moed/App/Moed.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        SUPPORTS_MACCATALYST: NO
+    entitlements:
+      path: Sources/Moed/App/Moed.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.wizycode.moed
+
+  # ─────────────────────────────────────────────────────────────
+  # Extension WidgetKit
+  # ─────────────────────────────────────────────────────────────
+  MoedWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Sources/MoedWidgets
+      - path: Sources/Shared      # présentation widget (parchemin, polices, i18n courtes)
+      # Double target membership (CONTRACTS §4.4) : le widget recalcule LOCALEMENT
+      # via les mêmes moteurs + données que l'app (parité de calcul stricte).
+      # Inclus ici sans déplacer les fichiers (ils restent la source de vérité de
+      # la cible Moed) — Engine (modèles + moteurs), Data (villes/tsadikim + JSON)
+      # et le lecteur de préférences App Group (SettingsStore : AppGroup + MoedJSON).
+      - path: Sources/Moed/Engine
+      - path: Sources/Moed/Data
+      - path: Sources/Moed/Store/SettingsStore.swift
+    dependencies:
+      - package: KosherCocoa
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed.widgets
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_ENTITLEMENTS: Sources/MoedWidgets/MoedWidgets.entitlements
+    info:
+      path: Sources/MoedWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Moed
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Sources/MoedWidgets/MoedWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.wizycode.moed
+
+  # ─────────────────────────────────────────────────────────────
+  # Tests (dont validation halakhique bloquante)
+  # ─────────────────────────────────────────────────────────────
+  MoedTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Sources/MoedTests   # tests + validation halakhique + fixture figé (bundlé)
+    dependencies:
+      - target: Moed
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed.tests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  Moed:
+    build:
+      targets:
+        Moed: all
+        MoedWidgets: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - MoedTests
+    archive:
+      config: Release

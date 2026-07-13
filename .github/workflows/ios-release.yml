@@ -1,0 +1,78 @@
+name: iOS Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      lane:
+        description: "Lane fastlane (beta = TestFlight, release = App Store)"
+        required: true
+        default: "beta"
+        type: choice
+        options: [beta, release]
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Métadonnées de build injectées comme variables d'environnement.
+      # Le .xcodeproj généré par XcodeGen référence $(BUILD_NUMBER) et $(TEAM_ID)
+      # (project.yml → CURRENT_PROJECT_VERSION / DEVELOPMENT_TEAM) : xcodebuild les
+      # résout depuis l'environnement au moment du build. Remplace complètement
+      # increment_build_number (retiré du Fastfile) : chaque run a un numéro
+      # monotone (github.run_number) — pas de collision TestFlight.
+      - name: Export build metadata (BUILD_NUMBER + TEAM_ID)
+        run: |
+          echo "BUILD_NUMBER=${{ github.run_number }}" >> "$GITHUB_ENV"
+          echo "TEAM_ID=${{ secrets.TEAM_ID }}" >> "$GITHUB_ENV"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Select Xcode (le plus récent — SDK iOS 26 requis pour Liquid Glass)
+        run: |
+          sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+          xcodebuild -version
+
+      # Le .xcodeproj n'est PAS commité : XcodeGen le régénère depuis project.yml
+      # (PLAN.md §9). DOIT tourner avant fastlane (build_app attend Moed.xcodeproj).
+      - name: Install XcodeGen & generate project
+        run: |
+          brew install xcodegen
+          xcodegen generate
+          # Pré-résout les dépendances SPM (KosherCocoa) pour un premier build propre.
+          xcodebuild -resolvePackageDependencies -project Moed.xcodeproj -scheme Moed
+
+      - name: Configurer la clé SSH pour fastlane match
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.MATCH_DEPLOY_KEY }}" > ~/.ssh/match_key
+          chmod 600 ~/.ssh/match_key
+          cat >> ~/.ssh/config <<EOF
+          Host github.com
+            IdentityFile ~/.ssh/match_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking accept-new
+          EOF
+
+      - name: Lancer fastlane
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          MATCH_GIT_URL: ${{ secrets.MATCH_GIT_URL }}
+          TEAM_ID: ${{ secrets.TEAM_ID }}
+        run: |
+          LANE="${{ github.event.inputs.lane }}"
+          if [ -z "$LANE" ]; then LANE="beta"; fi
+          bundle exec fastlane ios "$LANE"

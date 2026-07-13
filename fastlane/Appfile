@@ -1,0 +1,3 @@
+app_identifier("com.wizycode.moed")
+apple_id("ichaiwizman.apple@gmail.com")
+# team_id résolu automatiquement via la clé API App Store Connect

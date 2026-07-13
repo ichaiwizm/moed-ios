@@ -1,0 +1,1099 @@
+[
+  {
+    "slug": "rabbi-chimon-bar-yohai",
+    "names": {
+      "he": "רבי שמעון בר יוחאי",
+      "fr": "Rabbi Chimon bar Yohaï",
+      "en": "Rabbi Shimon bar Yochai"
+    },
+    "epithet": {
+      "he": "רשב\"י",
+      "fr": "Rachbi",
+      "en": "Rashbi"
+    },
+    "category": "tanna",
+    "hilula": {
+      "day": 18,
+      "month": "Iyyar"
+    },
+    "hilulaNote": {
+      "he": "ל\"ג בעומר",
+      "fr": "Lag BaOmer",
+      "en": "Lag BaOmer"
+    },
+    "yearGregorian": 160,
+    "kever": {
+      "place": "Méron",
+      "country": "IL"
+    },
+    "works": [
+      "Zohar (attribué)"
+    ],
+    "bio": {
+      "he": "תנא בן המאה השנייה ותלמידו של רבי עקיבא, מן החכמים הנזכרים ביותר במשנה. המסורת הקבלית מייחסת לו את ספר הזוהר. ההילולה שלו במירון בל\"ג בעומר מושכת מדי שנה מאות אלפי עולי רגל.",
+      "fr": "Tanna du IIe siècle, disciple de Rabbi Akiva, il figure parmi les sages les plus cités de la Michna. La tradition kabbalistique lui attribue le Zohar. Sa hiloula à Méron, le jour de Lag BaOmer, rassemble chaque année des centaines de milliers de pèlerins.",
+      "en": "A second-century Tanna and disciple of Rabbi Akiva, he is among the most frequently cited sages of the Mishnah. Kabbalistic tradition attributes the Zohar to him. His hilula at Meron on Lag BaOmer draws hundreds of thousands of pilgrims each year."
+    },
+    "confidence": "traditional",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Simeon_bar_Yochai",
+      "https://www.sefaria.org/topics/shimon-bar-yochai"
+    ]
+  },
+  {
+    "slug": "rabbi-meir-baal-haness",
+    "names": {
+      "he": "רבי מאיר בעל הנס",
+      "fr": "Rabbi Meir Baal Haness",
+      "en": "Rabbi Meir Baal HaNes"
+    },
+    "epithet": {
+      "he": "בעל הנס",
+      "fr": "Baal Haness",
+      "en": "Baal HaNes"
+    },
+    "category": "tanna",
+    "hilula": {
+      "day": 14,
+      "month": "Iyyar"
+    },
+    "hilulaNote": {
+      "he": "פסח שני",
+      "fr": "Pessah Sheni",
+      "en": "Pesach Sheni"
+    },
+    "yearGregorian": 175,
+    "kever": {
+      "place": "Tibériade",
+      "country": "IL"
+    },
+    "works": null,
+    "bio": {
+      "he": "תנא מן הדור הרביעי ותלמיד רבי עקיבא, מן החכמים הנזכרים ביותר במשנה. מקושר במסורת לצדקה (קרן \"רבי מאיר בעל הנס\"). קברו בטבריה הוא אתר עלייה לרגל מרכזי.",
+      "fr": "Tanna de la quatrième génération, disciple de Rabbi Akiva, il est l'un des sages les plus cités de la Michna. Il est traditionnellement associé à la charité (le fonds « Rabbi Meir Baal Haness »). Son tombeau à Tibériade est un lieu de pèlerinage majeur.",
+      "en": "A fourth-generation Tanna and disciple of Rabbi Akiva, he is one of the most frequently cited sages of the Mishnah. He is traditionally associated with charity (the \"Rabbi Meir Baal HaNes\" fund). His tomb in Tiberias is a major pilgrimage site."
+    },
+    "confidence": "traditional",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rabbi_Meir",
+      "https://www.sefaria.org/topics/rabbi-meir"
+    ]
+  },
+  {
+    "slug": "rambam",
+    "names": {
+      "he": "הרמב\"ם",
+      "fr": "Maïmonide",
+      "en": "Maimonides"
+    },
+    "epithet": {
+      "he": "רמב\"ם",
+      "fr": "Rambam",
+      "en": "Rambam"
+    },
+    "category": "rishon",
+    "hilula": {
+      "day": 20,
+      "month": "Tevet"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1204,
+    "kever": {
+      "place": "Tibériade",
+      "country": "IL"
+    },
+    "works": [
+      "Michné Torah",
+      "Guide des égarés",
+      "Commentaire de la Michna"
+    ],
+    "bio": {
+      "he": "רבי משה בן מימון (1138–1204), נולד בקורדובה ופעל במצרים, פוסק, פילוסוף ורופא. חיבורו ההלכתי \"משנה תורה\" ו\"מורה נבוכים\" נמנים עם יצירות היסוד של היהדות. קבור בטבריה.",
+      "fr": "Rabbi Moché ben Maïmon (1138–1204), né à Cordoue et actif en Égypte, fut un décisionnaire, philosophe et médecin. Son code de loi, le Michné Torah, et son Guide des égarés comptent parmi les œuvres majeures du judaïsme. Il est enterré à Tibériade.",
+      "en": "Rabbi Moshe ben Maimon (1138–1204), born in Córdoba and active in Egypt, was a legal authority, philosopher and physician. His law code, the Mishneh Torah, and his Guide for the Perplexed are among Judaism's foundational works. He is buried in Tiberias."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maimonides",
+      "https://www.sefaria.org/topics/maimonides"
+    ]
+  },
+  {
+    "slug": "rabbi-yossef-karo",
+    "names": {
+      "he": "רבי יוסף קארו",
+      "fr": "Rabbi Yossef Karo",
+      "en": "Rabbi Yosef Karo"
+    },
+    "epithet": {
+      "he": "בית יוסף",
+      "fr": "Beit Yossef",
+      "en": "Beit Yosef"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 13,
+      "month": "Nisan"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1575,
+    "kever": {
+      "place": "Safed",
+      "country": "IL"
+    },
+    "works": [
+      "Choulhan Aroukh",
+      "Beit Yossef",
+      "Kessef Michné"
+    ],
+    "bio": {
+      "he": "רבי יוסף קארו (1488–1575), נולד בספרד והתיישב בצפת, מחבר \"שולחן ערוך\", ספר ההלכה המקובל ביותר. פירושו \"בית יוסף\" הוא בר-סמכא. קבור בצפת.",
+      "fr": "Rabbi Yossef Karo (1488–1575), né en Espagne et établi à Safed, est l'auteur du Choulhan Aroukh, le code de loi juive le plus largement adopté. Son commentaire Beit Yossef fait autorité. Il est enterré à Safed.",
+      "en": "Rabbi Yosef Karo (1488–1575), born in Spain and settled in Safed, authored the Shulchan Aruch, the most widely adopted code of Jewish law. His Beit Yosef commentary is authoritative. He is buried in Safed."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Joseph_Karo",
+      "https://www.sefaria.org/topics/joseph-karo"
+    ]
+  },
+  {
+    "slug": "arizal",
+    "names": {
+      "he": "רבי יצחק לוריא",
+      "fr": "Rabbi Isaac Louria",
+      "en": "Rabbi Isaac Luria"
+    },
+    "epithet": {
+      "he": "האר\"י ז\"ל",
+      "fr": "Ari zal",
+      "en": "Arizal"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 5,
+      "month": "Av"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1572,
+    "kever": {
+      "place": "Safed",
+      "country": "IL"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי יצחק לוריא (1534–1572), האר\"י, גדול מקובלי צפת. תורתו, שנמסרה בידי תלמידו רבי חיים ויטאל, עיצבה מחדש את המחשבה המיסטית היהודית. נפטר צעיר ונטמן בצפת.",
+      "fr": "Rabbi Isaac Louria (1534–1572), dit l'Ari (« le Lion »), fut le maître de la kabbale de Safed. Son enseignement, transmis par son disciple Haïm Vital, refonda la pensée mystique juive. Il mourut jeune et fut enterré à Safed.",
+      "en": "Rabbi Isaac Luria (1534–1572), known as the Ari (\"the Lion\"), was the master of Safed Kabbalah. His teachings, transmitted by his disciple Chaim Vital, reshaped Jewish mystical thought. He died young and is buried in Safed."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isaac_Luria",
+      "https://www.chabad.org/library/article_cdo/aid/111876/"
+    ]
+  },
+  {
+    "slug": "baal-chem-tov",
+    "names": {
+      "he": "רבי ישראל בעל שם טוב",
+      "fr": "Rabbi Israël Baal Chem Tov",
+      "en": "Rabbi Israel Baal Shem Tov"
+    },
+    "epithet": {
+      "he": "הבעש\"ט",
+      "fr": "Becht",
+      "en": "Besht"
+    },
+    "category": "hassid",
+    "hilula": {
+      "day": 6,
+      "month": "Sivan"
+    },
+    "hilulaNote": {
+      "he": "שבועות",
+      "fr": "Chavouot",
+      "en": "Shavuot"
+    },
+    "yearGregorian": 1760,
+    "kever": {
+      "place": "Medzhybizh",
+      "country": "UA"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי ישראל בן אליעזר (בערך 1698–1760), מייסד החסידות. תורתו מדגישה שמחה, תפילה בהתלהבות ונוכחות אלוקית בכל דבר. קבור במז'יבוז' שבאוקראינה.",
+      "fr": "Rabbi Israël ben Eliézer (v. 1698–1760) est le fondateur du hassidisme. Son enseignement met l'accent sur la joie, la prière fervente et la présence divine en toute chose. Il est enterré à Medzhybizh, en Ukraine.",
+      "en": "Rabbi Israel ben Eliezer (c. 1698–1760) is the founder of Hasidism. His teaching emphasizes joy, fervent prayer, and the divine presence in all things. He is buried in Medzhybizh, Ukraine."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Baal_Shem_Tov",
+      "https://www.chabad.org/library/article_cdo/aid/109387/"
+    ]
+  },
+  {
+    "slug": "maggid-de-mezeritch",
+    "names": {
+      "he": "רבי דב בער ממזריטש",
+      "fr": "Rabbi Dov Ber de Mezeritch",
+      "en": "Rabbi Dov Ber of Mezeritch"
+    },
+    "epithet": {
+      "he": "המגיד ממזריטש",
+      "fr": "Le Maggid",
+      "en": "The Maggid"
+    },
+    "category": "hassid",
+    "hilula": {
+      "day": 19,
+      "month": "Kislev"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1772,
+    "kever": {
+      "place": "Hantsavichy",
+      "country": "BY"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי דב בער (בערך 1700–1772), ממלא מקומו של הבעש\"ט, ארגן והפיץ את תנועת החסידות. תלמידיו ייסדו את שושלות החסידות הגדולות. י\"ט כסלו, יום הילולתו, מצוין גם כחג הגאולה של תלמידו אדמו\"ר הזקן.",
+      "fr": "Rabbi Dov Ber (v. 1700–1772), successeur du Baal Chem Tov, structura et diffusa le mouvement hassidique. Ses disciples fondèrent les grandes dynasties hassidiques. Le 19 Kislev, jour de sa hiloula, est aussi célébré comme fête de la libération de son disciple l'Admour Hazaken.",
+      "en": "Rabbi Dov Ber (c. 1700–1772), successor to the Baal Shem Tov, organized and spread the Hasidic movement. His disciples founded the great Hasidic dynasties. The 19th of Kislev, his hilula, is also marked as the liberation festival of his disciple the Alter Rebbe."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dov_Ber_of_Mezeritch",
+      "https://www.chabad.org/library/article_cdo/aid/109389/"
+    ]
+  },
+  {
+    "slug": "rabbi-nahman-de-breslev",
+    "names": {
+      "he": "רבי נחמן מברסלב",
+      "fr": "Rabbi Nahman de Breslev",
+      "en": "Rabbi Nachman of Breslov"
+    },
+    "epithet": {
+      "he": "רבי נחמן",
+      "fr": "Rabbi Nahman",
+      "en": "Rebbe Nachman"
+    },
+    "category": "hassid",
+    "hilula": {
+      "day": 18,
+      "month": "Tishrei"
+    },
+    "hilulaNote": {
+      "he": "סוכות",
+      "fr": "Souccot",
+      "en": "Sukkot"
+    },
+    "yearGregorian": 1810,
+    "kever": {
+      "place": "Ouman",
+      "country": "UA"
+    },
+    "works": [
+      "Likoutei Moharan",
+      "Sipouré Maassiot"
+    ],
+    "bio": {
+      "he": "רבי נחמן (1772–1810), נין הבעש\"ט, מייסד חסידות ברסלב. תורתו מדגישה אמונה פשוטה, שמחה והתבודדות. קברו באומן מושך עשרות אלפי עולי רגל בראש השנה.",
+      "fr": "Rabbi Nahman (1772–1810), arrière-petit-fils du Baal Chem Tov, fonda le hassidisme de Breslev. Son enseignement met en avant la foi simple, la joie et la prière personnelle (hitbodedout). Son tombeau à Ouman attire des dizaines de milliers de pèlerins à Roch Hachana.",
+      "en": "Rabbi Nachman (1772–1810), great-grandson of the Baal Shem Tov, founded Breslov Hasidism. His teaching emphasizes simple faith, joy, and personal prayer (hitbodedut). His grave in Uman draws tens of thousands of pilgrims on Rosh Hashanah."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nachman_of_Breslov",
+      "https://www.sefaria.org/topics/nachman-of-breslov"
+    ]
+  },
+  {
+    "slug": "rabbi-elimelech-de-lizhensk",
+    "names": {
+      "he": "רבי אלימלך מליז'נסק",
+      "fr": "Rabbi Elimelech de Lizhensk",
+      "en": "Rabbi Elimelech of Lizhensk"
+    },
+    "epithet": {
+      "he": "נועם אלימלך",
+      "fr": "Noam Elimelech",
+      "en": "Noam Elimelech"
+    },
+    "category": "hassid",
+    "hilula": {
+      "day": 21,
+      "month": "Adar"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1787,
+    "kever": {
+      "place": "Leżajsk",
+      "country": "PL"
+    },
+    "works": [
+      "Noam Elimelech"
+    ],
+    "bio": {
+      "he": "רבי אלימלך וייסבלום (1717–1787), תלמיד המגיד ממזריטש, מגדולי מנהיגי החסידות בגליציה. ספרו \"נועם אלימלך\" הוא מקלאסיקות המחשבה החסידית. קברו בליז'נסק שבפולין נפקד רבות.",
+      "fr": "Rabbi Elimelech Weisblum (1717–1787), disciple du Maggid de Mezeritch, fut l'un des grands maîtres du hassidisme en Galicie. Son ouvrage Noam Elimelech est un classique de la pensée hassidique. Son tombeau à Leżajsk (Pologne) est très fréquenté.",
+      "en": "Rabbi Elimelech Weisblum (1717–1787), a disciple of the Maggid of Mezeritch, was a leading master of Hasidism in Galicia. His book Noam Elimelech is a classic of Hasidic thought. His grave in Leżajsk, Poland, is widely visited."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Elimelech_of_Lizhensk"
+    ]
+  },
+  {
+    "slug": "rabbi-levi-yitzhak-de-berditchev",
+    "names": {
+      "he": "רבי לוי יצחק מברדיטשוב",
+      "fr": "Rabbi Levi Yitzhak de Berditchev",
+      "en": "Rabbi Levi Yitzchak of Berditchev"
+    },
+    "epithet": {
+      "he": "קדושת לוי",
+      "fr": "Kedouchat Levi",
+      "en": "Kedushat Levi"
+    },
+    "category": "hassid",
+    "hilula": {
+      "day": 25,
+      "month": "Tishrei"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1809,
+    "kever": {
+      "place": "Berdytchiv",
+      "country": "UA"
+    },
+    "works": [
+      "Kedouchat Levi"
+    ],
+    "bio": {
+      "he": "רבי לוי יצחק (1740–1809), תלמיד המגיד ממזריטש, מכונה \"סנגורן של ישראל\" על תפילותיו לזכות עם ישראל. ספרו \"קדושת לוי\" נלמד בכל העולם החסידי. קבור בברדיטשוב.",
+      "fr": "Rabbi Levi Yitzhak (1740–1809), disciple du Maggid de Mezeritch, est connu comme le « défenseur d'Israël » pour ses prières en faveur du peuple juif. Son ouvrage Kedouchat Levi est étudié dans tout le monde hassidique. Il est enterré à Berditchev.",
+      "en": "Rabbi Levi Yitzchak (1740–1809), a disciple of the Maggid of Mezeritch, is known as the \"defender of Israel\" for his advocacy prayers on behalf of the Jewish people. His work Kedushat Levi is studied throughout the Hasidic world. He is buried in Berditchev."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Levi_Yitzchak_of_Berditchev"
+    ]
+  },
+  {
+    "slug": "alter-rebbe",
+    "names": {
+      "he": "רבי שניאור זלמן מלאדי",
+      "fr": "Rabbi Schneur Zalman de Liadi",
+      "en": "Rabbi Schneur Zalman of Liadi"
+    },
+    "epithet": {
+      "he": "אדמו\"ר הזקן",
+      "fr": "Admour Hazaken",
+      "en": "Alter Rebbe"
+    },
+    "category": "habad",
+    "hilula": {
+      "day": 24,
+      "month": "Tevet"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1812,
+    "kever": {
+      "place": "Haditch",
+      "country": "UA"
+    },
+    "works": [
+      "Tanya",
+      "Choulhan Aroukh HaRav"
+    ],
+    "bio": {
+      "he": "רבי שניאור זלמן (1745–1812), תלמיד המגיד ממזריטש, מייסד תנועת חב\"ד-ליובאוויטש. ספרו \"התניא\" הוא ספר היסוד של תורת חב\"ד. קבור בהאדיטש שבאוקראינה.",
+      "fr": "Rabbi Schneur Zalman (1745–1812), disciple du Maggid de Mezeritch, fonda le mouvement Habad-Loubavitch. Son ouvrage le Tanya est le texte fondateur de la philosophie Habad. Il est enterré à Haditch, en Ukraine.",
+      "en": "Rabbi Schneur Zalman (1745–1812), a disciple of the Maggid of Mezeritch, founded the Chabad-Lubavitch movement. His work the Tanya is the foundational text of Chabad philosophy. He is buried in Haditch, Ukraine."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shneur_Zalman_of_Liadi",
+      "https://www.chabad.org/therebbe/article_cdo/aid/62000/"
+    ]
+  },
+  {
+    "slug": "rabbi-yossef-yitzhak-schneersohn",
+    "names": {
+      "he": "רבי יוסף יצחק שניאורסון",
+      "fr": "Rabbi Yossef Yitzhak Schneersohn",
+      "en": "Rabbi Yosef Yitzchak Schneersohn"
+    },
+    "epithet": {
+      "he": "הריי\"צ",
+      "fr": "Rayatz",
+      "en": "Rayatz"
+    },
+    "category": "habad",
+    "hilula": {
+      "day": 10,
+      "month": "Shevat"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1950,
+    "kever": {
+      "place": "New York",
+      "country": "US"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי יוסף יצחק (1880–1950), האדמו\"ר השישי של חב\"ד, הנהיג את התנועה דרך רדיפות ברית המועצות והבנייה מחדש בארצות הברית. הילולתו בי' שבט מציינת גם את תחילת נשיאותו של יורשו.",
+      "fr": "Rabbi Yossef Yitzhak (1880–1950), sixième Rabbi de Loubavitch, dirigea le mouvement Habad à travers les persécutions soviétiques puis la reconstruction aux États-Unis. Sa hiloula, le 10 Shevat, marque aussi le début de la direction du Rabbi qui lui succéda.",
+      "en": "Rabbi Yosef Yitzchak (1880–1950), the sixth Lubavitcher Rebbe, led Chabad through Soviet persecution and its rebuilding in the United States. His hilula on the 10th of Shevat also marks the start of his successor's leadership."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yosef_Yitzchak_Schneersohn",
+      "https://www.chabad.org/therebbe/previous_rebbes/default_cdo/aid/62003/"
+    ]
+  },
+  {
+    "slug": "rabbi-menachem-mendel-schneerson",
+    "names": {
+      "he": "רבי מנחם מנדל שניאורסון",
+      "fr": "Rabbi Menahem Mendel Schneerson",
+      "en": "Rabbi Menachem Mendel Schneerson"
+    },
+    "epithet": {
+      "he": "הרבי מליובאוויטש",
+      "fr": "Le Rabbi de Loubavitch",
+      "en": "The Lubavitcher Rebbe"
+    },
+    "category": "habad",
+    "hilula": {
+      "day": 3,
+      "month": "Tammuz"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1994,
+    "kever": {
+      "place": "New York",
+      "country": "US"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי מנחם מנדל שניאורסון (1902–1994), האדמו\"ר השביעי והאחרון של חב\"ד, הפך את התנועה לרשת עולמית של שלוחים. מקום מנוחתו (\"האוהל\") בקווינס שבניו יורק הוא אתר תפילה מרכזי.",
+      "fr": "Rabbi Menahem Mendel Schneerson (1902–1994), septième et dernier Rabbi de Loubavitch, transforma Habad en un réseau mondial d'émissaires (chlouhim). Son tombeau (le « Ohel ») dans le Queens, à New York, est un lieu de recueillement majeur.",
+      "en": "Rabbi Menachem Mendel Schneerson (1902–1994), the seventh and last Lubavitcher Rebbe, transformed Chabad into a worldwide network of emissaries (shluchim). His resting place (the \"Ohel\") in Queens, New York, is a major site of prayer."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Menachem_Mendel_Schneerson",
+      "https://www.chabad.org/therebbe/"
+    ]
+  },
+  {
+    "slug": "vilna-gaon",
+    "names": {
+      "he": "רבי אליהו מווילנה",
+      "fr": "Rabbi Eliyahou de Vilna",
+      "en": "Rabbi Eliyahu of Vilna"
+    },
+    "epithet": {
+      "he": "הגר\"א",
+      "fr": "Le Gaon de Vilna",
+      "en": "The Vilna Gaon"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 19,
+      "month": "Tishrei"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1797,
+    "kever": {
+      "place": "Vilnius",
+      "country": "LT"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי אליהו בן שלמה זלמן (1720–1797), הגאון מווילנה, מגדולי חכמי התלמוד בהיסטוריה ומנהיג ה\"מתנגדים\". היה בקי גם במדעים. קבור בווילנה.",
+      "fr": "Rabbi Eliyahou ben Chlomo Zalman (1720–1797), le Gaon de Vilna, fut l'une des plus grandes autorités talmudiques de l'histoire et la figure de proue du courant « mitnaged ». Il maîtrisait aussi les sciences profanes. Il est enterré à Vilnius.",
+      "en": "Rabbi Eliyahu ben Shlomo Zalman (1720–1797), the Vilna Gaon, was one of history's foremost Talmudic authorities and the leading figure of the \"Mitnagdim\". He was also learned in the secular sciences. He is buried in Vilnius."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vilna_Gaon",
+      "https://www.sefaria.org/topics/the-vilna-gaon"
+    ]
+  },
+  {
+    "slug": "hafetz-haim",
+    "names": {
+      "he": "רבי ישראל מאיר הכהן",
+      "fr": "Rabbi Israël Meir Kagan",
+      "en": "Rabbi Yisrael Meir Kagan"
+    },
+    "epithet": {
+      "he": "החפץ חיים",
+      "fr": "Hafetz Haïm",
+      "en": "Chafetz Chaim"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 24,
+      "month": "Elul"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1933,
+    "kever": {
+      "place": "Radzin",
+      "country": "BY"
+    },
+    "works": [
+      "Hafetz Haïm",
+      "Michna Beroura"
+    ],
+    "bio": {
+      "he": "רבי ישראל מאיר הכהן (1839–1933), נודע בספרו על הלכות לשון הרע, \"חפץ חיים\". \"משנה ברורה\" שלו מן החיבורים ההלכתיים הנלמדים ביותר. חי ברדין שבפולין (כיום בלארוס).",
+      "fr": "Rabbi Israël Meir Kagan (1839–1933) est connu par son ouvrage sur les lois de la médisance, le Hafetz Haïm. Sa Michna Beroura est l'un des recueils de loi pratique les plus étudiés. Il vécut à Radin, en Pologne (aujourd'hui Biélorussie).",
+      "en": "Rabbi Yisrael Meir Kagan (1839–1933) is known by his book on the laws of proper speech, the Chafetz Chaim. His Mishnah Berurah is among the most studied works of practical law. He lived in Radin, Poland (today Belarus)."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yisrael_Meir_Kagan",
+      "https://www.sefaria.org/topics/israel-meir-kagan"
+    ]
+  },
+  {
+    "slug": "ben-ish-hai",
+    "names": {
+      "he": "רבי יוסף חיים מבגדאד",
+      "fr": "Rabbi Yossef Haïm de Bagdad",
+      "en": "Rabbi Yosef Chaim of Baghdad"
+    },
+    "epithet": {
+      "he": "הבן איש חי",
+      "fr": "Ben Ich Haï",
+      "en": "Ben Ish Chai"
+    },
+    "category": "sefarade",
+    "hilula": {
+      "day": 13,
+      "month": "Elul"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1909,
+    "kever": {
+      "place": "Bagdad",
+      "country": "IQ"
+    },
+    "works": [
+      "Ben Ich Haï"
+    ],
+    "bio": {
+      "he": "רבי יוסף חיים (1835–1909), מנהיגה ופוסקה של קהילת בגדאד. ספרו \"בן איש חי\", המשלב הלכה וקבלה, עודנו בר-סמכא בעולם הספרדי. קבור בבגדאד.",
+      "fr": "Rabbi Yossef Haïm (1835–1909) fut le grand maître et décisionnaire de la communauté de Bagdad. Son ouvrage Ben Ich Haï, mêlant loi et kabbale, fait toujours autorité dans le monde sefarade. Il est enterré à Bagdad.",
+      "en": "Rabbi Yosef Chaim (1835–1909) was the leading sage and legal authority of the Baghdad community. His work Ben Ish Chai, blending law and Kabbalah, remains authoritative in the Sephardic world. He is buried in Baghdad."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yosef_Hayyim",
+      "https://www.sefaria.org/topics/ben-ish-hai"
+    ]
+  },
+  {
+    "slug": "or-hahaim",
+    "names": {
+      "he": "רבי חיים בן עטר",
+      "fr": "Rabbi Haïm ben Attar",
+      "en": "Rabbi Chaim ben Attar"
+    },
+    "epithet": {
+      "he": "אור החיים",
+      "fr": "Or haHaïm",
+      "en": "Or HaChaim"
+    },
+    "category": "sefarade",
+    "hilula": {
+      "day": 15,
+      "month": "Tammuz"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1743,
+    "kever": {
+      "place": "Jérusalem",
+      "country": "IL"
+    },
+    "works": [
+      "Or haHaïm (commentaire de la Torah)"
+    ],
+    "bio": {
+      "he": "רבי חיים בן עטר (1696–1743), יליד מרוקו, מחבר פירוש התורה הנודע \"אור החיים\", הנלמד רבות בחוגים ספרדיים וחסידיים כאחד. עלה לירושלים ושם קבור, בהר הזיתים.",
+      "fr": "Rabbi Haïm ben Attar (1696–1743), né au Maroc, est l'auteur du célèbre commentaire de la Torah Or haHaïm, très étudié tant dans les milieux sefarades que hassidiques. Il s'installa à Jérusalem où il est enterré, au mont des Oliviers.",
+      "en": "Rabbi Chaim ben Attar (1696–1743), born in Morocco, authored the renowned Torah commentary Or HaChaim, widely studied in both Sephardic and Hasidic circles. He settled in Jerusalem, where he is buried on the Mount of Olives."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chaim_ibn_Attar",
+      "https://www.sefaria.org/topics/chaim-ibn-attar"
+    ]
+  },
+  {
+    "slug": "baba-sale",
+    "names": {
+      "he": "רבי ישראל אבוחצירא",
+      "fr": "Rabbi Israël Abihatséra",
+      "en": "Rabbi Israel Abuhatzeira"
+    },
+    "epithet": {
+      "he": "בבא סאלי",
+      "fr": "Baba Salé",
+      "en": "Baba Sali"
+    },
+    "category": "sefarade",
+    "hilula": {
+      "day": 4,
+      "month": "Shevat"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1984,
+    "kever": {
+      "place": "Netivot",
+      "country": "IL"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי ישראל אבוחצירא (1889–1984), בבא סאלי, מקובל יליד מרוקו ונכדו של רבי יעקב אבוחצירא. נערץ על חסידותו, התיישב בנתיבות ושם קברו אתר עלייה לרגל גדול.",
+      "fr": "Rabbi Israël Abihatséra (1889–1984), dit Baba Salé, était un maître kabbaliste originaire du Maroc, petit-fils de Rabbi Yaakov Abihatséra. Vénéré pour sa piété, il s'installa à Netivot où son tombeau est un grand lieu de pèlerinage.",
+      "en": "Rabbi Israel Abuhatzeira (1889–1984), known as Baba Sali, was a Moroccan-born kabbalist and grandson of Rabbi Yaakov Abuhatzeira. Revered for his piety, he settled in Netivot, where his tomb is a major pilgrimage site."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yisrael_Abuhatzeira"
+    ]
+  },
+  {
+    "slug": "rabbi-david-u-moshe",
+    "names": {
+      "he": "רבי דוד ומשה",
+      "fr": "Rabbi David ou-Moché",
+      "en": "Rabbi David u-Moshe"
+    },
+    "epithet": null,
+    "category": "sefarade",
+    "hilula": {
+      "day": 1,
+      "month": "Cheshvan"
+    },
+    "hilulaNote": null,
+    "yearGregorian": null,
+    "kever": {
+      "place": "Timzrit (Atlas)",
+      "country": "MA"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי דוד ומשה הוא צדיק נערץ ביהדות מרוקו, שקברו בהרי האטלס הגבוה. פרטי חייו ההיסטוריים מתועדים במעט ונשענים בעיקר על מסורת שבעל-פה. הילולתו מכנסת מאמינים רבים, במרוקו ובישראל.",
+      "fr": "Rabbi David ou-Moché est un tsadik vénéré du judaïsme marocain, dont le tombeau se trouve dans le Haut Atlas. Les détails historiques de sa vie sont peu documentés et relèvent surtout de la tradition orale. Sa hiloula rassemble de nombreux fidèles, au Maroc comme en Israël.",
+      "en": "Rabbi David u-Moshe is a revered tzadik of Moroccan Jewry whose tomb lies in the High Atlas mountains. The historical details of his life are sparsely documented and rest largely on oral tradition. His hilula draws many devotees, in Morocco and in Israel."
+    },
+    "confidence": "traditional",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_u-Moshe"
+    ]
+  },
+  {
+    "slug": "rabbi-yaakov-abuhatzeira",
+    "names": {
+      "he": "רבי יעקב אבוחצירא",
+      "fr": "Rabbi Yaakov Abihatséra",
+      "en": "Rabbi Yaakov Abuhatzeira"
+    },
+    "epithet": {
+      "he": "אביר יעקב",
+      "fr": "Abir Yaakov",
+      "en": "Abir Yaakov"
+    },
+    "category": "sefarade",
+    "hilula": {
+      "day": 20,
+      "month": "Tevet"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1880,
+    "kever": {
+      "place": "Damanhour",
+      "country": "EG"
+    },
+    "works": [
+      "Abir Yaakov",
+      "Pitouhé Hotam"
+    ],
+    "bio": {
+      "he": "רבי יעקב אבוחצירא (1807–1880), רב ומקובל גדול מתאפילאלת (מרוקו), אביה של שושלת אבוחצירא הנודעת. נפטר בדמנהור שבמצרים בדרכו לארץ ישראל, ושם קברו.",
+      "fr": "Rabbi Yaakov Abihatséra (1807–1880), grand rabbin et kabbaliste du Tafilalet (Maroc), fut le patriarche de la célèbre dynastie Abihatséra. Il mourut à Damanhour, en Égypte, en route vers la Terre d'Israël, où se trouve son tombeau.",
+      "en": "Rabbi Yaakov Abuhatzeira (1807–1880), a leading rabbi and kabbalist of the Tafilalt (Morocco), was the patriarch of the renowned Abuhatzeira dynasty. He died in Damanhour, Egypt, while traveling to the Land of Israel, where his tomb is located."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yaakov_Abuhatzeira"
+    ]
+  },
+  {
+    "slug": "rabbi-haim-pinto",
+    "names": {
+      "he": "רבי חיים פינטו",
+      "fr": "Rabbi Haïm Pinto",
+      "en": "Rabbi Chaim Pinto"
+    },
+    "epithet": null,
+    "category": "sefarade",
+    "hilula": {
+      "day": 26,
+      "month": "Elul"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1845,
+    "kever": {
+      "place": "Essaouira (Mogador)",
+      "country": "MA"
+    },
+    "works": null,
+    "bio": {
+      "he": "רבי חיים פינטו (1749–1845), רב ומקובל נערץ ממוגדור (אסאווירה) שבמרוקו. מייסד שושלת רבנית גדולה, נודע בחסידותו ובמעשי הצדקה שלו. קברו באסאווירה מושך עולי רגל מדי שנה.",
+      "fr": "Rabbi Haïm Pinto (1749–1845) fut un rabbin et kabbaliste vénéré de Mogador (Essaouira), au Maroc. Figure fondatrice d'une grande lignée rabbinique, il est réputé pour sa piété et ses actes de bienfaisance. Son tombeau à Essaouira attire chaque année des pèlerins.",
+      "en": "Rabbi Chaim Pinto (1749–1845) was a revered rabbi and kabbalist of Mogador (Essaouira), Morocco. The founding figure of a major rabbinic lineage, he is renowned for his piety and charity. His tomb in Essaouira draws pilgrims each year."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chaim_Pinto"
+    ]
+  },
+  {
+    "slug": "ramak-cordovero",
+    "names": {
+      "he": "רבי משה קורדוברו",
+      "fr": "Rabbi Moché Cordovéro",
+      "en": "Rabbi Moshe Cordovero"
+    },
+    "epithet": {
+      "he": "הרמ\"ק",
+      "fr": "Ramak",
+      "en": "Ramak"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 23,
+      "month": "Tammuz"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1570,
+    "kever": {
+      "place": "Safed",
+      "country": "IL"
+    },
+    "works": [
+      "Pardès Rimonim",
+      "Tomer Devora"
+    ],
+    "bio": {
+      "he": "רבי משה קורדוברו (1522–1570), הרמ\"ק, שיטתן הגדול של הקבלה בצפת לפני האר\"י. ספרו \"פרדס רימונים\" מארגן את המחשבה הקבלית, ו\"תומר דבורה\" עוסק במוסר. קבור בצפת.",
+      "fr": "Rabbi Moché Cordovéro (1522–1570), le Ramak, fut le grand systématisateur de la kabbale à Safed avant l'Ari. Son ouvrage Pardès Rimonim organise la pensée kabbalistique, et son Tomer Devora traite de l'éthique. Il est enterré à Safed.",
+      "en": "Rabbi Moshe Cordovero (1522–1570), the Ramak, was the great systematizer of Kabbalah in Safed before the Ari. His work Pardes Rimonim organizes kabbalistic thought, and his Tomer Devorah addresses ethics. He is buried in Safed."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Moses_ben_Jacob_Cordovero"
+    ]
+  },
+  {
+    "slug": "yonatan-ben-ouziel",
+    "names": {
+      "he": "יונתן בן עוזיאל",
+      "fr": "Yonatan ben Ouziel",
+      "en": "Yonatan ben Uziel"
+    },
+    "epithet": null,
+    "category": "tanna",
+    "hilula": {
+      "day": 26,
+      "month": "Sivan"
+    },
+    "hilulaNote": null,
+    "yearGregorian": null,
+    "kever": {
+      "place": "Amouka",
+      "country": "IL"
+    },
+    "works": null,
+    "bio": {
+      "he": "יונתן בן עוזיאל היה, לפי התלמוד, גדול תלמידי הלל הזקן, שפעל סביב תחילת הספירה. המסורת מייחסת לו את תרגום הנביאים. קברו באמוקה שבגליל נודע כמסוגל לזיווג.",
+      "fr": "Yonatan ben Ouziel fut, selon le Talmud, le plus éminent des disciples de Hillel l'Ancien, actif au tournant de l'ère commune. La tradition lui attribue le Targoum (traduction araméenne) des Prophètes. Son tombeau à Amouka, en Galilée, est réputé propice au mariage.",
+      "en": "Yonatan ben Uziel was, according to the Talmud, the foremost disciple of Hillel the Elder, active around the turn of the common era. Tradition attributes to him the Targum (Aramaic translation) of the Prophets. His tomb in Amuka, Galilee, is reputed to be auspicious for finding a spouse."
+    },
+    "confidence": "traditional",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jonathan_ben_Uzziel"
+    ]
+  },
+  {
+    "slug": "rashi",
+    "names": {
+      "he": "רש\"י",
+      "fr": "Rachi",
+      "en": "Rashi"
+    },
+    "epithet": {
+      "he": "רבי שלמה יצחקי",
+      "fr": "Rachi de Troyes",
+      "en": "Rashi of Troyes"
+    },
+    "category": "rishon",
+    "hilula": {
+      "day": 29,
+      "month": "Tammuz"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1105,
+    "kever": {
+      "place": "Troyes",
+      "country": "FR"
+    },
+    "works": [
+      "Commentaire de la Torah",
+      "Commentaire du Talmud"
+    ],
+    "bio": {
+      "he": "רבי שלמה יצחקי (1040–1105), רש\"י, מטרוייש, פרשן התורה והתלמוד המובהק. פירושיו נלווים כמעט לכל מהדורה מודפסת ונותרו שער הכניסה ללימוד היהודי. מקום קברו המדויק בטרוייש אינו ודאי.",
+      "fr": "Rabbi Chlomo Yitzhaki (1040–1105), dit Rachi, de Troyes, est le commentateur par excellence de la Torah et du Talmud. Ses commentaires accompagnent presque toutes les éditions imprimées et restent la porte d'entrée de l'étude juive. L'emplacement exact de son tombeau à Troyes est incertain.",
+      "en": "Rabbi Shlomo Yitzchaki (1040–1105), known as Rashi, of Troyes, is the foremost commentator on the Torah and Talmud. His commentaries accompany nearly every printed edition and remain the gateway to Jewish study. The exact location of his grave in Troyes is uncertain."
+    },
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rashi",
+      "https://www.sefaria.org/topics/rashi"
+    ]
+  },
+  {
+    "slug": "ramban",
+    "names": {
+      "he": "הרמב\"ן",
+      "fr": "Nahmanide",
+      "en": "Nachmanides"
+    },
+    "epithet": {
+      "he": "רמב\"ן",
+      "fr": "Ramban",
+      "en": "Ramban"
+    },
+    "category": "rishon",
+    "hilula": {
+      "day": 11,
+      "month": "Nisan"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1270,
+    "kever": {
+      "place": "Israël (incertain)",
+      "country": "IL"
+    },
+    "works": [
+      "Commentaire de la Torah",
+      "Milhamot Hachem"
+    ],
+    "bio": {
+      "he": "רבי משה בן נחמן (1194–בערך 1270) מגירונה, פוסק, פרשן ומקובל גדול, ומגן היהדות בוויכוח ברצלונה. עלה לארץ ישראל בערוב ימיו. תאריך פטירתו המדויק ומקום קברו אינם ידועים בוודאות.",
+      "fr": "Rabbi Moché ben Nahman (1194–v. 1270), de Gérone, fut un décisionnaire, commentateur et kabbaliste majeur, et un défenseur du judaïsme lors de la Disputation de Barcelone. Il monta en Terre d'Israël à la fin de sa vie. La date exacte de son décès et l'emplacement de son tombeau ne sont pas établis avec certitude.",
+      "en": "Rabbi Moshe ben Nachman (1194–c. 1270) of Girona was a major legal authority, commentator and kabbalist, and a defender of Judaism at the Disputation of Barcelona. He ascended to the Land of Israel late in life. The exact date of his death and the location of his grave are not established with certainty."
+    },
+    "confidence": "traditional",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nachmanides",
+      "https://www.sefaria.org/topics/nachmanides"
+    ]
+  },
+  {
+    "slug": "chatam-sofer",
+    "names": {
+      "he": "רבי משה סופר",
+      "fr": "Rabbi Moché Sofer",
+      "en": "Rabbi Moshe Sofer"
+    },
+    "epithet": {
+      "he": "החתם סופר",
+      "fr": "Hatam Sofer",
+      "en": "Chatam Sofer"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 25,
+      "month": "Tishrei"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1839,
+    "kever": {
+      "place": "Bratislava (Presbourg)",
+      "country": "SK"
+    },
+    "works": [
+      "Chout Hatam Sofer"
+    ],
+    "bio": {
+      "he": "רבי משה סופר (1762–1839), רבה של פרשבורג (ברטיסלבה), מגדולי פוסקי דורו ודמות מרכזית באורתודוקסיה מול הרפורמה. שו\"ת \"חתם סופר\" עודנו בר-סמכא. קבור בברטיסלבה.",
+      "fr": "Rabbi Moché Sofer (1762–1839), rabbin de Presbourg (Bratislava), fut l'une des plus grandes autorités halakhiques de son temps et une figure centrale de l'orthodoxie face à la Réforme. Ses responsa (Chout Hatam Sofer) font toujours autorité. Il est enterré à Bratislava.",
+      "en": "Rabbi Moshe Sofer (1762–1839), rabbi of Pressburg (Bratislava), was one of the greatest halachic authorities of his era and a central figure of Orthodoxy in the face of Reform. His responsa (Chatam Sofer) remain authoritative. He is buried in Bratislava."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Moses_Sofer"
+    ]
+  },
+  {
+    "slug": "rabbi-ovadia-yosef",
+    "names": {
+      "he": "רבי עובדיה יוסף",
+      "fr": "Rabbi Ovadia Yossef",
+      "en": "Rabbi Ovadia Yosef"
+    },
+    "epithet": {
+      "he": "יביע אומר",
+      "fr": "Yabia Omer",
+      "en": "Yabia Omer"
+    },
+    "category": "sefarade",
+    "hilula": {
+      "day": 3,
+      "month": "Cheshvan"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 2013,
+    "kever": {
+      "place": "Jérusalem",
+      "country": "IL"
+    },
+    "works": [
+      "Yabia Omer",
+      "Yehavé Daat"
+    ],
+    "bio": {
+      "he": "רבי עובדיה יוסף (1920–2013), הרב הראשי הספרדי לישראל והפוסק המרכזי של יהדות ספרד בת-זמננו, פעל להשבת מסורת ספרד. בהלווייתו בירושלים השתתפו מאות אלפים. שם קבור.",
+      "fr": "Rabbi Ovadia Yossef (1920–2013) fut Grand Rabbin sefarade d'Israël et l'autorité halakhique majeure du judaïsme sefarade contemporain, œuvrant à restaurer la tradition sefarade. Ses funérailles à Jérusalem rassemblèrent des centaines de milliers de personnes. Il y est enterré.",
+      "en": "Rabbi Ovadia Yosef (1920–2013) was Sephardic Chief Rabbi of Israel and the foremost halachic authority of contemporary Sephardic Jewry, working to restore Sephardic tradition. His funeral in Jerusalem drew hundreds of thousands. He is buried there."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ovadia_Yosef"
+    ]
+  },
+  {
+    "slug": "rabbi-moshe-feinstein",
+    "names": {
+      "he": "רבי משה פיינשטיין",
+      "fr": "Rabbi Moché Feinstein",
+      "en": "Rabbi Moshe Feinstein"
+    },
+    "epithet": {
+      "he": "אגרות משה",
+      "fr": "Igrot Moché",
+      "en": "Igros Moshe"
+    },
+    "category": "acharon",
+    "hilula": {
+      "day": 13,
+      "month": "Adar"
+    },
+    "hilulaNote": {
+      "he": "תענית אסתר",
+      "fr": "Taanit Esther",
+      "en": "Taanit Esther"
+    },
+    "yearGregorian": 1986,
+    "kever": {
+      "place": "Jérusalem",
+      "country": "IL"
+    },
+    "works": [
+      "Igrot Moché"
+    ],
+    "bio": {
+      "he": "רבי משה פיינשטיין (1895–1986), יליד רוסיה שהתיישב בניו יורק, הפוסק המרכזי של היהדות האורתודוקסית באמריקה. שו\"ת \"אגרות משה\" עוסק בשאלות רבות של החיים המודרניים. קבור בירושלים.",
+      "fr": "Rabbi Moché Feinstein (1895–1986), né en Russie et établi à New York, fut la principale autorité halakhique du judaïsme orthodoxe américain. Ses responsa (Igrot Moché) traitent de nombreuses questions de la vie moderne. Il est enterré à Jérusalem.",
+      "en": "Rabbi Moshe Feinstein (1895–1986), born in Russia and settled in New York, was the leading halachic authority of American Orthodox Jewry. His responsa (Igros Moshe) address many questions of modern life. He is buried in Jerusalem."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Moshe_Feinstein"
+    ]
+  },
+  {
+    "slug": "chida",
+    "names": {
+      "he": "רבי חיים יוסף דוד אזולאי",
+      "fr": "Rabbi Haïm Yossef David Azoulay",
+      "en": "Rabbi Chaim Yosef David Azulai"
+    },
+    "epithet": {
+      "he": "החיד\"א",
+      "fr": "Le Hida",
+      "en": "The Chida"
+    },
+    "category": "sefarade",
+    "hilula": {
+      "day": 11,
+      "month": "Adar"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 1806,
+    "kever": {
+      "place": "Jérusalem",
+      "country": "IL"
+    },
+    "works": [
+      "Chem HaGuedolim",
+      "Birké Yossef"
+    ],
+    "bio": {
+      "he": "רבי חיים יוסף דוד אזולאי (1724–1806), החיד\"א, יליד ירושלים, פוסק, מקובל וביבליוגרף פורה, וכן שד\"ר של ארץ הקודש ברחבי אירופה. חיבר עשרות ספרים. עצמותיו הועלו לירושלים ב-1960.",
+      "fr": "Rabbi Haïm Yossef David Azoulay (1724–1806), le Hida, né à Jérusalem, fut un halakhiste, kabbaliste et bibliographe prolifique, ainsi qu'un émissaire (chadar) de la Terre sainte à travers l'Europe. Il rédigea des dizaines d'ouvrages. Ses restes furent transférés à Jérusalem en 1960.",
+      "en": "Rabbi Chaim Yosef David Azulai (1724–1806), the Chida, born in Jerusalem, was a prolific halachist, kabbalist and bibliographer, as well as an emissary (shadar) of the Holy Land across Europe. He wrote dozens of works. His remains were reinterred in Jerusalem in 1960."
+    },
+    "confidence": "high",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chaim_Joseph_David_Azulai"
+    ]
+  },
+  {
+    "slug": "rabbi-yehuda-hanassi",
+    "names": {
+      "he": "רבי יהודה הנשיא",
+      "fr": "Rabbi Yehouda haNassi",
+      "en": "Rabbi Yehuda HaNasi"
+    },
+    "epithet": {
+      "he": "רבנו הקדוש",
+      "fr": "Rabbénou HaKadoch",
+      "en": "Rabbeinu HaKadosh"
+    },
+    "category": "tanna",
+    "hilula": {
+      "day": 15,
+      "month": "Kislev"
+    },
+    "hilulaNote": null,
+    "yearGregorian": 217,
+    "kever": {
+      "place": "Beit Shearim",
+      "country": "IL"
+    },
+    "works": [
+      "Michna (rédaction)"
+    ],
+    "bio": {
+      "he": "רבי יהודה הנשיא (בערך 135–בערך 217), מנהיג עם ישראל בארץ, עורך המשנה, יסוד התורה שבעל-פה. עושרו וקרבתו לשלטון הרומי מסופרים בתלמוד. תאריך הילולתו נשען על מסורת.",
+      "fr": "Rabbi Yehouda haNassi (v. 135–v. 217), chef du peuple juif en Terre d'Israël, est le rédacteur de la Michna, socle de la loi orale. Sa richesse et sa proximité avec le pouvoir romain sont évoquées dans le Talmud. La date de sa hiloula relève de la tradition.",
+      "en": "Rabbi Yehuda HaNasi (c. 135–c. 217), leader of the Jewish people in the Land of Israel, was the redactor of the Mishnah, the bedrock of the Oral Law. His wealth and ties to Roman authority are recounted in the Talmud. The date of his hilula rests on tradition."
+    },
+    "confidence": "traditional",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Judah_ha-Nasi",
+      "https://www.sefaria.org/topics/judah-ha-nasi"
+    ]
+  }
+]

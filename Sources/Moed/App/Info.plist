@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Identité de bundle -->
+	<key>CFBundleName</key>
+	<string>Moed</string>
+	<key>CFBundleDisplayName</key>
+	<string>Moed</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+
+	<!-- Langues : hébreu (primaire, RTL) / français / anglais, à parité (SPEC §5).
+	     Région de développement = fr (défaut de code SPEC §5). -->
+	<key>CFBundleDevelopmentRegion</key>
+	<string>fr</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>he</string>
+		<string>fr</string>
+		<string>en</string>
+	</array>
+
+	<!-- Scène SwiftUI (pas d'AppDelegate/SceneDelegate storyboard). -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+
+	<!-- Écran de lancement minimal (parchemin — la couleur canvas est un
+	     color set de l'asset catalog). -->
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>canvas</string>
+	</dict>
+
+	<!-- Orientations : portrait prioritaire (louah de poche). -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- Style de barre de statut piloté par SwiftUI. -->
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+
+	<!-- Géolocalisation OPT-IN : uniquement pour proposer la ville la plus proche
+	     (CLLocationManager, SPEC §7 / §10). Aucune donnée ne quitte l'appareil. -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Moed utilise votre position uniquement pour proposer la ville la plus proche et calculer les horaires localement. Rien n'est envoyé ni conservé hors de votre appareil.</string>
+
+	<!-- Tâches de fond : replanification locale de la fenêtre glissante de
+	     notifications déterministes (BGTaskScheduler, SPEC §9 / CONTRACTS §4.4). -->
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.wizycode.moed.refresh</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+
+	<!-- Polices embarquées self-hosted (zéro requête réseau, DESIGN §3).
+	     Display latin/hébreu + Body latin/hébreu. -->
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fraunces.ttf</string>
+		<string>FrankRuhlLibre.ttf</string>
+		<string>InstrumentSans.ttf</string>
+		<string>Assistant.ttf</string>
+	</array>
+
+	<!-- 100 % offline : App Transport Security verrouillé, aucun appel réseau au
+	     runtime pour le calcul (SPEC §10, règle d'or n°1). -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

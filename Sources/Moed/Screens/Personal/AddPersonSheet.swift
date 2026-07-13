@@ -234,10 +234,10 @@ struct AddPersonSheet: View {
 private struct NerCapsuleStyle: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
-        Body(configuration: configuration)
+        NerCapsuleBody(configuration: configuration)
     }
 
-    private struct Body: View {
+    private struct NerCapsuleBody: View {
         let configuration: ButtonStyle.Configuration
         @Environment(\.isEnabled) private var isEnabled
 

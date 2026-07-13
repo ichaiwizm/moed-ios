@@ -91,18 +91,20 @@ public enum BackgroundRefresh {
         let lang = settings.lang ?? Lang.fromSystem()
 
         // 3. Re-remplir la fenêtre glissante, puis signaler la fin.
+        //    `setTaskCompleted` n'est appelé qu'à UN seul endroit (fin du `Task`),
+        //    avec le succès dérivé de l'annulation : appeler `setTaskCompleted`
+        //    deux fois (fin normale + expiration) est un comportement indéfini.
         let work = Task {
-            let planned = await NotificationScheduler.rescheduleAndWait(
+            _ = await NotificationScheduler.rescheduleAndWait(
                 settings: settings, family: family, geo: geo, lang: lang
             )
-            task.setTaskCompleted(success: true)
-            _ = planned
+            task.setTaskCompleted(success: !Task.isCancelled)
         }
 
-        // 4. Si le système reprend son budget, annuler proprement.
+        // 4. Si le système reprend son budget, annuler proprement : le `Task`
+        //    ci-dessus détecte l'annulation et clôt la tâche avec `success: false`.
         task.expirationHandler = {
             work.cancel()
-            task.setTaskCompleted(success: false)
         }
     }
     #endif

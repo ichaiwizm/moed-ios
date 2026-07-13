@@ -60,7 +60,9 @@ public enum L10n {
     private enum Store {
         /// Cache `Lang → [clé: valeur]`. Protégé par un verrou pour la sûreté
         /// concurrente (widgets + app peuvent lire en parallèle).
-        private static var cache: [Lang: [String: String]] = [:]
+        /// `nonisolated(unsafe)` : accès sérialisé manuellement par `lock`
+        /// (strict concurrency ne peut pas le prouver seul).
+        nonisolated(unsafe) private static var cache: [Lang: [String: String]] = [:]
         private static let lock = NSLock()
 
         static func table(for lang: Lang) -> [String: String] {

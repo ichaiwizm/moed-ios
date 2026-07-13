@@ -16,7 +16,9 @@ import SwiftUI
 
 /// PreferenceKey remontant l'offset vertical d'un `ScrollView` pour piloter l'apparition du header.
 struct ScrollOffsetKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
+    // Propriété calculée (et non `static var` stockée) : évite un état global mutable
+    // nonisolated — warning sous `SWIFT_STRICT_CONCURRENCY: complete`, erreur en Swift 6.
+    static var defaultValue: CGFloat { 0 }
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = nextValue()
     }

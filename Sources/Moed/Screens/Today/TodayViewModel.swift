@@ -17,6 +17,7 @@
 
 import Foundation
 
+@MainActor
 struct TodayViewModel {
 
     // MARK: - Modèles d'affichage (dérivés, pas de recalcul moteur)

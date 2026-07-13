@@ -10,7 +10,10 @@
 # inclus dans les DEUX cibles via double target membership (Sources/Shared), pas
 # de framework dynamique séparé (CONTRACTS §4.4, PLAN §1).
 #
-# Dépendance runtime UNIQUE : KosherCocoa (SPM) — parité kosher-zmanim / KosherJava.
+# Aucune dépendance SPM runtime : le calcul solaire/halakhique est 100 % natif
+# (Swift pur, algorithme NOAA porté de KosherJava dans Engine/SolarCalculator.swift)
+# — parité stricte avec kosher-zmanim / KosherJava, validée hors-ligne contre la
+# fixture (Sources/MoedTests/Fixtures/kosher_zmanim_reference.json).
 
 name: Moed
 
@@ -40,11 +43,6 @@ settings:
     ENABLE_USER_SCRIPT_SANDBOXING: YES
     TARGETED_DEVICE_FAMILY: "1,2"   # iPhone + iPad
 
-packages:
-  KosherCocoa:
-    url: https://github.com/MosheBerman/KosherCocoa
-    from: "4.0.0"
-
 targets:
 
   # ─────────────────────────────────────────────────────────────
@@ -57,7 +55,6 @@ targets:
       - path: Sources/Moed
       - path: Sources/Shared      # Engine + Data + tokens partagés (double membership)
     dependencies:
-      - package: KosherCocoa
       - target: MoedWidgets
         embed: true
     settings:
@@ -92,8 +89,6 @@ targets:
       - path: Sources/Moed/Engine
       - path: Sources/Moed/Data
       - path: Sources/Moed/Store/SettingsStore.swift
-    dependencies:
-      - package: KosherCocoa
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed.widgets

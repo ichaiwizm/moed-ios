@@ -6,7 +6,7 @@
 //  Ashkenazi haftara and the SEPHARDIC haftara (which differs for a number of
 //  parshiyot). Derived offline from `@hebcal/leyning`.
 //
-//  hebcal / KosherCocoa cover the Ashkenazi rite; the Sephardic haftara is the
+//  hebcal covers the Ashkenazi rite; the Sephardic haftara is the
 //  documented "table maison" of CONTRACTS §3.1. When the Sephardic reading is
 //  identical to the Ashkenazi one, `sephardic` is stored empty and the lookup
 //  returns the Ashkenazi reference.

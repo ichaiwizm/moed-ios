@@ -10,18 +10,17 @@
 //                 fixe en minutes (défaut 72 min, Rabbeinu Tam — valeur du web).
 //
 //  Le coucher utilisé est élévation-conscient ssi `geo.elevation > 0` (le calcul
-//  passe par `KCSolarCalendar`, qui n'applique l'élévation qu'au-dessus du niveau
-//  de la mer et force le fuseau IANA de la ville pour un DST correct partout).
+//  passe par `SolarCalendar`, qui n'applique l'élévation qu'au-dessus du niveau
+//  de la mer et pilote le fuseau IANA de la ville pour un DST correct partout).
 //
 //  Invariants : instants BRUTS (aucun arrondi ici — fait à l'affichage) ;
 //  `nil` aux latitudes extrêmes (jamais `NaN`) ; 100 % offline / déterministe.
 //
 //  Dépend de : EngineModels (GeoContext, CandleMode, TzeitMethod) et de
-//  `KCSolarCalendar` (défini dans ZmanimEngine.swift).
+//  `SolarCalendar` / `SolarTime` (définis dans SolarCalculator.swift).
 //
 
 import Foundation
-import KosherCocoa
 
 enum CandleEngine {
 
@@ -60,7 +59,7 @@ enum CandleEngine {
         case .minutes(let m):  minutes = m
         }
 
-        return KCSolarCalendar.withCalendar(date: date, geo: geo) { cal in
+        return SolarCalendar.withCalendar(date: date, geo: geo) { cal in
             guard let sunset = cal.sunset() else { return nil }
             return sunset.addingTimeInterval(-Double(minutes) * 60)
         }
@@ -80,7 +79,7 @@ enum CandleEngine {
     static func havdalah(date: Date,
                          geo: GeoContext,
                          tzeit: TzeitMethod) -> Date? {
-        KCSolarCalendar.withCalendar(date: date, geo: geo) { cal -> Date? in
+        SolarCalendar.withCalendar(date: date, geo: geo) { cal -> Date? in
             switch tzeit {
             case .degrees:
                 // Zénith = 90° (horizon géométrique) + dépression en degrés.

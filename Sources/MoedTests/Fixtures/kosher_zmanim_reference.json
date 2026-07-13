@@ -2,7 +2,7 @@
   "meta": {
     "generatedAt": "2026-07-13T15:07:49.082Z",
     "source": "kosher-zmanim (ComplexZmanimCalendar, NOAA) + @hebcal/core — exported offline",
-    "note": "Reference outputs for KosherCocoa parity. Zmanim/candles/havdalah in UTC ISO-8601. Elevation 0 to isolate the solar algorithm.",
+    "note": "Reference outputs for native NOAA solar-calculator parity. Zmanim/candles/havdalah in UTC ISO-8601. Elevation 0 to isolate the solar algorithm.",
     "tolerance": {
       "hebrewDateMinutes": 0,
       "zmanimSeconds": 120

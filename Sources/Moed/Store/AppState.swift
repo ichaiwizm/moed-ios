@@ -30,6 +30,7 @@ import Foundation
 import Observation
 import SwiftUI
 
+@MainActor
 @Observable
 final class AppState {
 
@@ -51,7 +52,10 @@ final class AppState {
 
     // MARK: - Timer 1 s
 
-    @ObservationIgnored private var ticker: Timer?
+    // `nonisolated(unsafe)` : le Timer n'est manipulé que sur le main run loop
+    // (start/stop @MainActor, tick sur RunLoop.main), mais `deinit` est
+    // nonisolated et doit pouvoir l'invalider — l'accès est sûr en pratique.
+    @ObservationIgnored nonisolated(unsafe) private var ticker: Timer?
 
     // MARK: - Dérivés synchrones (recalculés instantanément, offline)
 
@@ -108,7 +112,9 @@ final class AppState {
     func startTick() {
         guard ticker == nil else { return }
         let timer = Timer(timeInterval: 1.0, repeats: true) { [weak self] _ in
-            self?.now = Date()
+            // Le timer bat sur RunLoop.main → on est déjà sur le main actor ;
+            // `assumeIsolated` permet de muter l'état @MainActor sans hop async.
+            MainActor.assumeIsolated { self?.now = Date() }
         }
         timer.tolerance = 0.1
         RunLoop.main.add(timer, forMode: .common) // continue de battre pendant le scroll

@@ -17,8 +17,8 @@
 //     deterministic Hebrew date arithmetic (`HebrewCalc`), with the standard
 //     Shabbat-postponement rules for fasts and the Israeli modern-holiday rules.
 //   • Fast start/end, candle lighting and havdalah come from the sibling zmanim
-//     engines (`ZmanimEngine` / `CandleEngine`, KosherCocoa/NOAA) so DST is
-//     correct via IANA identifiers — never duplicated solar math.
+//     engines (`ZmanimEngine` / `CandleEngine`, native NOAA solar calculator) so
+//     DST is correct via IANA identifiers — never duplicated solar math.
 //
 //  100% offline, deterministic, no network.
 //

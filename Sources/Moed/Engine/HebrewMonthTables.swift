@@ -5,8 +5,8 @@
 //  Local trilingual name tables (he / fr / en) for Hebrew months and weekdays,
 //  plus Hebrew-letter numeral rendering (gematriya) for years and days.
 //
-//  hebcal / KosherJava / KosherCocoa only know `en` / `he` — **never** ask the
-//  library for a French rendering. All month/weekday names and the year/day
+//  hebcal / KosherJava only know `en` / `he` — **never** derive a French
+//  rendering from a library. All month/weekday names and the year/day
 //  Hebrew-letter strings are produced here (ported 1:1 from the web engine
 //  `mvp-moed/src/lib/engine/hebrewDate.ts` and `@hebcal/hdate` `gematriya.ts`).
 //

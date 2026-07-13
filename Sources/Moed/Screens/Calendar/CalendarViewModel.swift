@@ -86,8 +86,8 @@ final class CalendarViewModel {
 
     /// « Juillet 2026 » / « July 2026 » / « יולי 2026 » selon la langue.
     /// Calendrier grégorien explicite (parité web `formatMonthYear`), noms
-    /// localisés — hebcal/KosherCocoa ne sont PAS sollicités ici (mois
-    /// grégoriens, pas hébraïques).
+    /// localisés — aucun moteur hébraïque n'est sollicité ici (mois grégoriens,
+    /// pas hébraïques).
     func headerTitle(lang: Lang) -> String {
         let locale = Locale(identifier: lang.bcp47)
         let fmt = Self.formatter(for: lang.bcp47)

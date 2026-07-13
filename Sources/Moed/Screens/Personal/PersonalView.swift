@@ -25,6 +25,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 // MARK: - Présentation d'un PersonType (pastille, icônes NON directionnelles)
 

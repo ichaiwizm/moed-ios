@@ -2,15 +2,15 @@
 //  ZmanimEngine.swift
 //  Moed — Engine (source de vérité halakhique)
 //
-//  Calcule les 16 zmanim du catalogue figé (`ZmanKey`) via KosherCocoa
-//  (`ComplexZmanimCalendar` + `GeoLocation`), le port officiel Objective-C/Swift
-//  de KosherJava par Moshe Berman — contrepartie iOS directe de `kosher-zmanim`
-//  (web) et `KosherJava 2.5.0` (Android). Algorithme solaire NOAA.
+//  Calcule les 16 zmanim du catalogue figé (`ZmanKey`) via le calculateur
+//  solaire natif `SolarCalculator` (algorithme NOAA de KosherJava, Swift pur,
+//  sans dépendance externe) — parité stricte avec `kosher-zmanim` (web) et
+//  `KosherJava 2.5.0` (Android). Algorithme solaire NOAA.
 //
 //  Parité STRICTE avec le moteur web `mvp-moed/src/lib/engine/zmanim.ts` :
-//  chaque zman est recalculé à partir des mêmes formules que kosher-zmanim, et
-//  non délégué aveuglément aux getters de haut niveau de KosherCocoa (dont les
-//  méthodes GRA utilisent toujours le niveau de la mer et ignorent l'élévation).
+//  chaque zman est recalculé à partir des mêmes formules que kosher-zmanim
+//  (lever/coucher + heures proportionnelles GRA/MGA), et non délégué à des
+//  getters de haut niveau (dont les méthodes GRA forcent le niveau de la mer).
 //
 //  Invariants (CONTRACTS §1.3, NATIVE_SPEC §3.4) :
 //   • Toutes les `Date` sont des instants absolus BRUTS — aucun arrondi ici.
@@ -27,74 +27,10 @@
 //
 
 import Foundation
-import KosherCocoa
 
-// MARK: - Fabrique de calendrier solaire (partagée avec CandleEngine)
-
-/// Construit un `ComplexZmanimCalendar` KosherCocoa correctement configuré pour
-/// le jour civil de `date` à l'emplacement `geo`, et exécute `body` avec ce
-/// calendrier.
-///
-/// ### Pourquoi ce niveau d'indirection ?
-/// KosherCocoa décompose son `workingDate` en année/mois/jour **dans le fuseau
-/// par défaut du process** (`NSTimeZone.default`) et applique un « day-roll »
-/// (`localTimeZone`) pour ramener l'instant sur le bon jour civil. Sur un
-/// appareil dont le fuseau diffère de celui de la ville calculée (ex. téléphone
-/// à Paris, zmanim de Sydney), cela produit des résultats décalés d'un jour.
-///
-/// Pour neutraliser ce piège — impératif dans une app multi-villes — on force
-/// temporairement `NSTimeZone.default` au fuseau IANA de la ville pendant le
-/// calcul (sérialisé par un verrou, la valeur étant globale au process). Dans
-/// ces conditions KosherCocoa se comporte comme si l'appareil était physiquement
-/// dans la ville : décomposition ET day-roll utilisent le bon fuseau, et
-/// l'instant absolu obtenu coïncide exactement avec kosher-zmanim / KosherJava.
-enum KCSolarCalendar {
-
-    /// Sérialise l'accès à `NSTimeZone.default` (état global du process).
-    private static let lock = NSLock()
-
-    /// Exécute `body` avec un calendrier KosherCocoa prêt pour `date` / `geo`.
-    /// - Returns: la valeur produite par `body` (ex. un `Date?` ou un dictionnaire
-    ///   de zmanim). `body` reçoit un calendrier dont `workingDate` est fixé à
-    ///   midi (heure locale de la ville) du jour civil demandé.
-    static func withCalendar<T>(date: Date,
-                                geo: GeoContext,
-                                _ body: (ComplexZmanimCalendar) -> T) -> T {
-        let timeZone = TimeZone(identifier: geo.timeZone) ?? TimeZone(identifier: "UTC")!
-        // Élévation prise en compte SEULEMENT si strictement positive.
-        let elevation = geo.elevation > 0 ? geo.elevation : 0
-
-        lock.lock()
-        defer { lock.unlock() }
-
-        let previousDefault = NSTimeZone.default
-        NSTimeZone.default = timeZone
-        defer { NSTimeZone.default = previousDefault }
-
-        // Jour civil (Y/M/D) tel que vu dans le fuseau de la ville, ancré à midi
-        // pour rester à l'écart des bascules de minuit lors de la décomposition.
-        var gregorian = Calendar(identifier: .gregorian)
-        gregorian.timeZone = timeZone
-        let ymd = gregorian.dateComponents([.year, .month, .day], from: date)
-        var noonComponents = DateComponents()
-        noonComponents.year = ymd.year
-        noonComponents.month = ymd.month
-        noonComponents.day = ymd.day
-        noonComponents.hour = 12
-        noonComponents.minute = 0
-        noonComponents.second = 0
-        let workingDate = gregorian.date(from: noonComponents) ?? date
-
-        let location = GeoLocation(latitude: geo.lat,
-                                   andLongitude: geo.lng,
-                                   elevation: elevation,
-                                   andTimeZone: timeZone)
-        let calendar = ComplexZmanimCalendar(location: location)
-        calendar.workingDate = workingDate
-
-        return body(calendar)
-    }
-}
+// La fabrique de calendrier solaire (`SolarCalendar`) et le calculateur natif
+// (`SolarTime`, algorithme NOAA en Swift pur) sont définis dans
+// `SolarCalculator.swift` — partagés avec `CandleEngine`.
 
 // MARK: - Moteur des zmanim
 
@@ -105,7 +41,7 @@ enum ZmanimEngine {
     static func zmanim(date: Date, geo: GeoContext, settings: Settings) -> ZmanimResult {
 
         // Résolution des heures brutes dans le fuseau de la ville.
-        let times: [ZmanKey: Date?] = KCSolarCalendar.withCalendar(date: date, geo: geo) { cal in
+        let times: [ZmanKey: Date?] = SolarCalendar.withCalendar(date: date, geo: geo) { cal in
             computeTimes(cal)
         }
 
@@ -135,16 +71,16 @@ enum ZmanimEngine {
 
     // MARK: Calcul des instants (dans le bloc à fuseau forcé)
 
-    /// Recalcule les 16 zmanim à partir des primitives solaires KosherCocoa.
+    /// Recalcule les 16 zmanim à partir des primitives solaires natives.
     ///
     /// Le lever/coucher `cal.sunrise()` / `cal.sunset()` sont ajustés à
     /// l'élévation ssi celle-ci est > 0 (élévation déjà « bakée » à 0 sinon par
-    /// `KCSolarCalendar`), ce qui reproduit `getSunrise()` / `getSunset()` du web
+    /// `SolarCalendar`), ce qui reproduit `getSunrise()` / `getSunset()` du web
     /// sous `setUseElevation(elevation > 0)`. Toutes les heures temporelles (GRA,
     /// MGA, plag…) sont dérivées de ces deux ancres via des `shaʿot zmaniyot`,
-    /// exactement comme kosher-zmanim — et NON via les getters GRA de KosherCocoa
+    /// exactement comme kosher-zmanim — et NON via des getters GRA de haut niveau
     /// (qui forcent le niveau de la mer).
-    private static func computeTimes(_ cal: ComplexZmanimCalendar) -> [ZmanKey: Date?] {
+    private static func computeTimes(_ cal: SolarTime) -> [ZmanKey: Date?] {
 
         // Ancres élévation-conscientes.
         let sunrise = cal.sunrise()      // netz (hanetz hachama)
@@ -213,7 +149,7 @@ enum ZmanimEngine {
         case .minutes(let m):  candleMinutes = m
         }
 
-        return KCSolarCalendar.withCalendar(date: date, geo: geo) { cal -> (Date?, Date?) in
+        return SolarCalendar.withCalendar(date: date, geo: geo) { cal -> (Date?, Date?) in
             var candle: Date? = nil
             var havdalah: Date? = nil
 

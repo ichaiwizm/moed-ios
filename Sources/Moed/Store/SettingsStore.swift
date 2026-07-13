@@ -23,14 +23,17 @@ enum AppGroup {
 /// Encodeurs/décodeurs JSON partagés, configurés pour une sérialisation stable
 /// et cross-plateforme (dates ISO-8601, clés triées pour des diffs déterministes).
 enum MoedJSON {
-    static let encoder: JSONEncoder = {
+    // `nonisolated(unsafe)` : JSONEncoder/JSONDecoder ne sont pas Sendable, mais
+    // ces instances partagées ne sont utilisées qu'en configuration figée
+    // (encode/decode ponctuels) — sûr, et requis pour compiler en Swift 6.
+    nonisolated(unsafe) static let encoder: JSONEncoder = {
         let e = JSONEncoder()
         e.dateEncodingStrategy = .iso8601
         e.outputFormatting = [.sortedKeys]
         return e
     }()
 
-    static let decoder: JSONDecoder = {
+    nonisolated(unsafe) static let decoder: JSONDecoder = {
         let d = JSONDecoder()
         d.dateDecodingStrategy = .iso8601
         return d

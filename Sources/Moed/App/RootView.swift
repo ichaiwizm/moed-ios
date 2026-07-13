@@ -16,6 +16,7 @@
 //
 
 import SwiftUI
+import UIKit   // UITabBarAppearance / UIColor / UIFont / UITabBar / NSAttributedString.Key.foregroundColor+font (SwiftUI ne réexporte pas UIKit)
 
 struct RootView: View {
 

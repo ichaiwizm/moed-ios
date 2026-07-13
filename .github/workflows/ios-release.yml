@@ -49,8 +49,7 @@ jobs:
         run: |
           brew install xcodegen
           xcodegen generate
-          # Pré-résout les dépendances SPM (KosherCocoa) pour un premier build propre.
-          xcodebuild -resolvePackageDependencies -project Moed.xcodeproj -scheme Moed
+          # Aucune dépendance SPM à résoudre : le calcul est 100 % natif (Swift pur).
 
       - name: Configurer la clé SSH pour fastlane match
         run: |

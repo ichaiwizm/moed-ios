@@ -31,6 +31,7 @@ import CoreLocation
 /// L'autorisation « When In Use » est demandée à la volée (jamais au lancement,
 /// NATIVE_SPEC §9). Le `completion` est **toujours** appelé une seule fois, sur
 /// le thread principal, y compris en cas de refus ou d'erreur (→ `nil`).
+@MainActor
 final class LocationProvider: NSObject, CLLocationManagerDelegate {
 
     private let manager = CLLocationManager()
@@ -66,31 +67,40 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
 
     // MARK: - CLLocationManagerDelegate
 
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        // On ne réagit que si une demande est en cours (completion non consommé).
-        guard completion != nil, !didFinish else { return }
-        switch manager.authorizationStatus {
-        case .authorizedWhenInUse, .authorizedAlways:
-            manager.requestLocation()
-        case .denied, .restricted:
-            finish(nil)
-        case .notDetermined:
-            break // en attente du choix utilisateur
-        @unknown default:
-            finish(nil)
+    // Les callbacks CoreLocation sont livrés sur la run loop du thread ayant créé
+    // le manager (ici le main thread, l'objet étant @MainActor). Ils satisfont des
+    // exigences `nonisolated` du protocole, d'où le hop `assumeIsolated`.
+    nonisolated func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        MainActor.assumeIsolated {
+            // On ne réagit que si une demande est en cours (completion non consommé).
+            guard completion != nil, !didFinish else { return }
+            switch manager.authorizationStatus {
+            case .authorizedWhenInUse, .authorizedAlways:
+                manager.requestLocation()
+            case .denied, .restricted:
+                finish(nil)
+            case .notDetermined:
+                break // en attente du choix utilisateur
+            @unknown default:
+                finish(nil)
+            }
         }
     }
 
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else {
-            finish(nil)
-            return
+    nonisolated func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        MainActor.assumeIsolated {
+            guard let location = locations.last else {
+                finish(nil)
+                return
+            }
+            finish(nearestCity(to: location))
         }
-        finish(nearestCity(to: location))
     }
 
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        finish(nil)
+    nonisolated func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        MainActor.assumeIsolated {
+            finish(nil)
+        }
     }
 
     // MARK: - Matching offline
@@ -115,10 +125,6 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
         didFinish = true
         let cb = completion
         completion = nil
-        if Thread.isMainThread {
-            cb?(city)
-        } else {
-            DispatchQueue.main.async { cb?(city) }
-        }
+        cb?(city) // toujours invoqué sur le main actor
     }
 }

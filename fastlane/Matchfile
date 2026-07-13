@@ -1,5 +1,5 @@
 git_url("git@github.com:ichaiwizm/ios-signing.git")
 storage_mode("git")
 type("appstore")
-app_identifier(["com.wizycode.moed"])
+app_identifier(["com.wizycode.moed", "com.wizycode.moed.widgets"])
 readonly(false)

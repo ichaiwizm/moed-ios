@@ -23,19 +23,36 @@ platform :ios do
 
     match(type: "appstore", api_key: api_key, readonly: false)
 
+    widget_id = "#{APP_IDENTIFIER}.widgets"
+
+    # Cible principale
     update_code_signing_settings(
       use_automatic_signing: false,
       path: "#{SCHEME}.xcodeproj",
       team_id: ENV["TEAM_ID"],
       code_sign_identity: "Apple Distribution",
+      targets: [SCHEME],
       bundle_identifier: APP_IDENTIFIER,
       profile_name: "match AppStore #{APP_IDENTIFIER}"
+    )
+    # Extension widget
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "#{SCHEME}.xcodeproj",
+      team_id: ENV["TEAM_ID"],
+      code_sign_identity: "Apple Distribution",
+      targets: ["MoedWidgets"],
+      bundle_identifier: widget_id,
+      profile_name: "match AppStore #{widget_id}"
     )
 
     build_app(
       scheme: SCHEME,
       export_method: "app-store",
-      export_options: { signingStyle: "manual", provisioningProfiles: { APP_IDENTIFIER => "match AppStore #{APP_IDENTIFIER}" } }
+      export_options: { signingStyle: "manual", provisioningProfiles: {
+        APP_IDENTIFIER => "match AppStore #{APP_IDENTIFIER}",
+        widget_id => "match AppStore #{widget_id}"
+      } }
     )
 
     upload_to_testflight(

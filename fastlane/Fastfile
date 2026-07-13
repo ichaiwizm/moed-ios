@@ -16,6 +16,7 @@ end
 platform :ios do
   desc "Build + upload TestFlight"
   lane :beta do
+    setup_ci(force: true)   # keychain CI : évite le hang de codesign en headless
     api_key = asc_api_key
 
     # (project.yml) ; xcodebuild résout BUILD_NUMBER (= github.run_number, exporté

@@ -312,6 +312,7 @@ enum Sedra {
     private static func D(_ p: Int) -> SedraItem { .doubled(p) }
     private static func P(_ p: Int) -> SedraItem { .parsha(p) }
     private static func C(_ s: String) -> SedraItem { .chag(s) }
+    private static func cat(_ parts: [SedraItem]...) -> [SedraItem] { parts.flatMap { $0 } }
 
     private static var yearStartVayeilech: [SedraItem] { [P(51), P(52), C(CHMSUKOT)] }
     private static var yearStartHaazinu: [SedraItem] { [P(52), C(YK), C(CHMSUKOT)] }
@@ -321,21 +322,21 @@ enum Sedra {
     private static let types: [String: [SedraItem]] = {
         var t: [String: [SedraItem]] = [:]
 
-        t["020"]  = yearStartVayeilech + seq(0, 20) + [D(21), P(23), P(24), C(CHMPESACH), P(25), D(26), D(28), P(30), D(31)] + seq(33, 40) + [D(41)] + seq(43, 49) + [D(50)]
-        t["0220"] = yearStartVayeilech + seq(0, 20) + [D(21), P(23), P(24), C(CHMPESACH), P(25), D(26), D(28), P(30), D(31), P(33), C(SHAVUOT)] + seq(34, 37) + [D(38), P(40), D(41)] + seq(43, 49) + [D(50)]
-        t["0510"] = yearStartHaazinu + seq(0, 20) + [D(21), P(23), P(24), C(PESACH1), C(PESACH8), P(25), D(26), D(28), P(30), D(31)] + seq(33, 40) + [D(41)] + seq(43, 50)
-        t["0511"] = yearStartHaazinu + seq(0, 20) + [D(21), P(23), P(24), C(PESACH), P(25), D(26), D(28)] + seq(30, 40) + [D(41)] + seq(43, 50)
-        t["052"]  = yearStartHaazinu + seq(0, 24) + [C(PESACH7), P(25), D(26), D(28), P(30), D(31)] + seq(33, 40) + [D(41)] + seq(43, 50)
-        t["070"]  = yearStartRH + seq(0, 20) + [D(21), P(23), P(24), C(PESACH7), P(25), D(26), D(28), P(30), D(31)] + seq(33, 40) + [D(41)] + seq(43, 50)
-        t["072"]  = yearStartRH + seq(0, 20) + [D(21), P(23), P(24), C(CHMPESACH), P(25), D(26), D(28), P(30), D(31)] + seq(33, 40) + [D(41)] + seq(43, 49) + [D(50)]
-        t["1200"] = yearStartVayeilech + seq(0, 27) + [C(CHMPESACH)] + seq(28, 33) + [C(SHAVUOT)] + seq(34, 37) + [D(38), P(40), D(41)] + seq(43, 49) + [D(50)]
-        t["1201"] = yearStartVayeilech + seq(0, 27) + [C(CHMPESACH)] + seq(28, 40) + [D(41)] + seq(43, 49) + [D(50)]
-        t["1220"] = yearStartVayeilech + seq(0, 27) + [C(PESACH1), C(PESACH8)] + seq(28, 40) + [D(41)] + seq(43, 50)
-        t["1221"] = yearStartVayeilech + seq(0, 27) + [C(PESACH)] + seq(28, 50)
-        t["150"]  = yearStartHaazinu + seq(0, 28) + [C(PESACH7)] + seq(29, 50)
-        t["152"]  = yearStartHaazinu + seq(0, 28) + [C(CHMPESACH)] + seq(29, 49) + [D(50)]
-        t["170"]  = yearStartRH + seq(0, 27) + [C(CHMPESACH)] + seq(28, 40) + [D(41)] + seq(43, 49) + [D(50)]
-        t["1720"] = yearStartRH + seq(0, 27) + [C(CHMPESACH)] + seq(28, 33) + [C(SHAVUOT)] + seq(34, 37) + [D(38), P(40), D(41)] + seq(43, 49) + [D(50)]
+        t["020"]  = cat(yearStartVayeilech, seq(0, 20), [D(21), P(23), P(24), C(CHMPESACH), P(25), D(26), D(28), P(30), D(31)], seq(33, 40), [D(41)], seq(43, 49), [D(50)])
+        t["0220"] = cat(yearStartVayeilech, seq(0, 20), [D(21), P(23), P(24), C(CHMPESACH), P(25), D(26), D(28), P(30), D(31), P(33), C(SHAVUOT)], seq(34, 37), [D(38), P(40), D(41)], seq(43, 49), [D(50)])
+        t["0510"] = cat(yearStartHaazinu, seq(0, 20), [D(21), P(23), P(24), C(PESACH1), C(PESACH8), P(25), D(26), D(28), P(30), D(31)], seq(33, 40), [D(41)], seq(43, 50))
+        t["0511"] = cat(yearStartHaazinu, seq(0, 20), [D(21), P(23), P(24), C(PESACH), P(25), D(26), D(28)], seq(30, 40), [D(41)], seq(43, 50))
+        t["052"]  = cat(yearStartHaazinu, seq(0, 24), [C(PESACH7), P(25), D(26), D(28), P(30), D(31)], seq(33, 40), [D(41)], seq(43, 50))
+        t["070"]  = cat(yearStartRH, seq(0, 20), [D(21), P(23), P(24), C(PESACH7), P(25), D(26), D(28), P(30), D(31)], seq(33, 40), [D(41)], seq(43, 50))
+        t["072"]  = cat(yearStartRH, seq(0, 20), [D(21), P(23), P(24), C(CHMPESACH), P(25), D(26), D(28), P(30), D(31)], seq(33, 40), [D(41)], seq(43, 49), [D(50)])
+        t["1200"] = cat(yearStartVayeilech, seq(0, 27), [C(CHMPESACH)], seq(28, 33), [C(SHAVUOT)], seq(34, 37), [D(38), P(40), D(41)], seq(43, 49), [D(50)])
+        t["1201"] = cat(yearStartVayeilech, seq(0, 27), [C(CHMPESACH)], seq(28, 40), [D(41)], seq(43, 49), [D(50)])
+        t["1220"] = cat(yearStartVayeilech, seq(0, 27), [C(PESACH1), C(PESACH8)], seq(28, 40), [D(41)], seq(43, 50))
+        t["1221"] = cat(yearStartVayeilech, seq(0, 27), [C(PESACH)], seq(28, 50))
+        t["150"]  = cat(yearStartHaazinu, seq(0, 28), [C(PESACH7)], seq(29, 50))
+        t["152"]  = cat(yearStartHaazinu, seq(0, 28), [C(CHMPESACH)], seq(29, 49), [D(50)])
+        t["170"]  = cat(yearStartRH, seq(0, 27), [C(CHMPESACH)], seq(28, 40), [D(41)], seq(43, 49), [D(50)])
+        t["1720"] = cat(yearStartRH, seq(0, 27), [C(CHMPESACH)], seq(28, 33), [C(SHAVUOT)], seq(34, 37), [D(38), P(40), D(41)], seq(43, 49), [D(50)])
 
         // Aliases (sedra.ts).
         t["0221"] = t["020"]

@@ -3,12 +3,12 @@
 #
 # Cibles :
 #   • Moed         — application SwiftUI (iOS 17+)
-#   • MoedWidgets  — extension WidgetKit (Allumage / Zmanim / Omer)
 #   • MoedTests    — tests unitaires + validation halakhique (matrice 10 villes × 2 ans)
 #
-# Partage app ↔ widget : les dossiers Engine/, Data/ et les tokens couleur sont
-# inclus dans les DEUX cibles via double target membership (Sources/Shared), pas
-# de framework dynamique séparé (CONTRACTS §4.4, PLAN §1).
+# NB v1 : l'extension WidgetKit (MoedWidgets) est RETIRÉE du build (frictions de
+# signature). Ses sources restent sur disque (Sources/MoedWidgets/) mais ne sont
+# compilées par aucune cible ; à rebrancher plus tard. Le code partagé
+# (Sources/Shared : Engine/, Data/, tokens) reste compilé dans la seule cible Moed.
 #
 # Aucune dépendance SPM runtime : le calcul solaire/halakhique est 100 % natif
 # (Swift pur, algorithme NOAA porté de KosherJava dans Engine/SolarCalculator.swift)
@@ -54,10 +54,7 @@ targets:
     platform: iOS
     sources:
       - path: Sources/Moed
-      - path: Sources/Shared      # Engine + Data + tokens partagés (double membership)
-    dependencies:
-      - target: MoedWidgets
-        embed: true
+      - path: Sources/Shared      # Engine + Data + tokens partagés (widget retiré en v1)
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed
@@ -68,32 +65,10 @@ targets:
         SUPPORTS_MACCATALYST: NO
 
   # ─────────────────────────────────────────────────────────────
-  # Extension WidgetKit
+  # Extension WidgetKit (MoedWidgets) — RETIRÉE en v1 (frictions de signature).
+  # Les sources restent sur disque dans Sources/MoedWidgets/ mais ne sont
+  # compilées par AUCUNE cible. À rebrancher plus tard.
   # ─────────────────────────────────────────────────────────────
-  MoedWidgets:
-    type: app-extension
-    platform: iOS
-    sources:
-      - path: Sources/MoedWidgets
-      - path: Sources/Shared      # présentation widget (parchemin, polices, i18n courtes)
-      # Double target membership (CONTRACTS §4.4) : le widget recalcule LOCALEMENT
-      # via les mêmes moteurs + données que l'app (parité de calcul stricte).
-      # Inclus ici sans déplacer les fichiers (ils restent la source de vérité de
-      # la cible Moed) — Engine (modèles + moteurs), Data (villes/tsadikim + JSON)
-      # et le lecteur de préférences (SettingsStore : UserDefaults.standard + MoedJSON).
-      - path: Sources/Moed/Engine
-      - path: Sources/Moed/Data
-      - path: Sources/Moed/Store/SettingsStore.swift
-    settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed.widgets
-        CODE_SIGN_STYLE: Manual
-    info:
-      path: Sources/MoedWidgets/Info.plist
-      properties:
-        CFBundleDisplayName: Moed
-        NSExtension:
-          NSExtensionPointIdentifier: com.apple.widgetkit-extension
 
   # ─────────────────────────────────────────────────────────────
   # Tests (dont validation halakhique bloquante)
@@ -115,7 +90,6 @@ schemes:
     build:
       targets:
         Moed: all
-        MoedWidgets: all
     run:
       config: Debug
     test:

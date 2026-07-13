@@ -36,12 +36,12 @@ final class AppState {
 
     // MARK: - État persisté / temps
 
-    /// Préférences utilisateur (persistées via `SettingsStore`, App Group).
+    /// Préférences utilisateur (persistées via `SettingsStore`, `UserDefaults.standard`).
     var settings: Settings {
         didSet { SettingsStore.save(settings) }
     }
 
-    /// Carnet familial local (persisté via `FamilyStore`, App Group).
+    /// Carnet familial local (persisté via `FamilyStore`, Documents).
     var family: [PersonRecord] {
         didSet { FamilyStore.save(family) }
     }

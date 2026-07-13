@@ -2,10 +2,10 @@
 //  FamilyStore.swift
 //  Moed
 //
-//  Persistance du carnet familial (`[PersonRecord]`) en JSON, dans le container
-//  de l'App Group `group.com.wizycode.moed`. Aucune donnée ne quitte l'appareil
-//  (privacy by design — NATIVE_SPEC §7.2). Le fichier étant dans l'App Group,
-//  les widgets WidgetKit y accèdent en lecture pour recalculer localement.
+//  Persistance du carnet familial (`[PersonRecord]`) en JSON, dans le
+//  répertoire Documents de l'app. Aucune donnée ne quitte l'appareil
+//  (privacy by design — NATIVE_SPEC §7.2). Les widgets ne lisent pas le carnet
+//  familial ; ils recalculent zmanim/dates via les moteurs déterministes.
 //
 //  Contrat : CONTRACTS.md §4.2 —
 //      enum FamilyStore { static func load() -> [PersonRecord] ; static func save(_:) }
@@ -18,25 +18,18 @@ import Foundation
 /// Store du carnet familial — CONTRACTS.md §4.2.
 ///
 /// Format : un tableau JSON `[PersonRecord]` écrit dans
-/// `moed_family.json` à la racine du container partagé App Group. Écriture
+/// `moed_family.json` dans le répertoire Documents de l'app. Écriture
 /// atomique + protection de fichier (chiffré au repos) puisque ce sont des
 /// données personnelles (noms, dates de décès/naissance).
 enum FamilyStore {
 
-    /// Nom du fichier dans le container App Group (clé logique `moed_family`).
+    /// Nom du fichier (clé logique `moed_family`).
     private static let fileName = "moed_family.json"
 
-    /// URL du fichier dans le container de l'App Group, ou `nil` si l'App Group
-    /// n'est pas disponible (dans ce cas on retombe sur le répertoire Documents
-    /// pour rester fonctionnel même sans entitlement — ex. tests).
+    /// URL du fichier dans le répertoire Documents local de l'app.
     private static var fileURL: URL? {
-        let fm = FileManager.default
-        if let container = fm.containerURL(forSecurityApplicationGroupIdentifier: AppGroup.identifier) {
-            return container.appendingPathComponent(fileName)
-        }
-        // Repli : Documents locaux (l'app fonctionne, les widgets ne partagent
-        // simplement pas le fichier tant que l'App Group n'est pas configuré).
-        return fm.urls(for: .documentDirectory, in: .userDomainMask)
+        FileManager.default
+            .urls(for: .documentDirectory, in: .userDomainMask)
             .first?
             .appendingPathComponent(fileName)
     }

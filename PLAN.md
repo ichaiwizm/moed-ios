@@ -260,8 +260,8 @@ Pattern : **`@Observable` (Observation framework, iOS 17)** — un `AppState` ra
 - **Timer 1 s** pilote `now` → compte à rebours d'allumage (DESIGN §5.2). VoiceOver : throttle l'annonce à la minute (DESIGN §10).
 - **Langue in-app** : changer `settings.lang` met à jour `layoutDirection` **sans redémarrage**, transition `.smooth`.
 - **Persistance** :
-  - `SettingsStore` → `UserDefaults(suiteName: appGroup)` (partagé widgets).
-  - `FamilyStore` → JSON `moed_family` dans le container **App Group** (partage widget + privacy : rien ne quitte l'appareil, SPEC §7.2). SwiftData envisageable en v2 mais non nécessaire.
+  - `SettingsStore` → `UserDefaults.standard` (le widget recalcule tout localement, aucun conteneur partagé).
+  - `FamilyStore` → JSON `moed_family` dans le répertoire **Documents** (privacy : rien ne quitte l'appareil, SPEC §7.2). SwiftData envisageable en v2 mais non nécessaire.
 
 ---
 
@@ -327,9 +327,9 @@ targets:
     sources: [Moed, Shared]
     dependencies: [{ package: KosherCocoa }, { target: MoedWidgets, embed: true }]
     settings: { PRODUCT_BUNDLE_IDENTIFIER: com.wizycode.moed, CODE_SIGN_STYLE: Manual }
-    entitlements: App Group (group.com.wizycode.moed)
+    entitlements: aucune (widget recalcule localement, pas de conteneur partagé)
   MoedWidgets:
-    type: app-extension; sources: [MoedWidgets, Shared]; App Group identique
+    type: app-extension; sources: [MoedWidgets, Shared]; pas d'App Group (recalcul local)
   MoedTests:
     type: bundle.unit-test; dependencies: [{ target: Moed }]
 ```

@@ -3,9 +3,9 @@
 //  MoedWidgets — extension WidgetKit
 //
 //  Point d'entrée de l'extension : déclare les trois widgets home-screen /
-//  Lock Screen de Moed (DESIGN §11). Tous RECALCULENT localement via l'App Group
-//  partagé (`WidgetEngine`) — 100 % offline, aucun réseau, parité de calcul avec
-//  l'app (CONTRACTS §4.4).
+//  Lock Screen de Moed (DESIGN §11). Tous RECALCULENT localement via
+//  `WidgetEngine` — 100 % offline, aucun réseau, aucun conteneur partagé, parité
+//  de calcul avec l'app (CONTRACTS §4.4).
 //
 //  • CandleWidget  — allumage + compte à rebours + parasha (small / medium / Lock).
 //  • ZmanimWidget  — zmanim clés du jour, prochain surligné (medium).

@@ -11,7 +11,7 @@
 //  jamais au lancement — SPEC §9).
 //
 //  Cet écran CONSOMME uniquement l'API contractuelle d'`AppState` (CONTRACTS §4.2) :
-//  toute mutation passe par `AppState.update(settings:)`, qui persiste (App Group),
+//  toute mutation passe par `AppState.update(settings:)`, qui persiste (UserDefaults),
 //  recalcule les dérivés synchrones (ville / geo / langue / direction) et replanifie
 //  la fenêtre glissante de notifications locales. Aucun calcul halakhique ici,
 //  aucun réseau : tout est offline et déterministe.
@@ -337,7 +337,7 @@ struct SettingsView: View {
     // MARK: - Mutations (chemin unique → AppState.update)
 
     /// Applique une transformation immuable des préférences puis persiste via
-    /// `AppState.update(settings:)` (App Group + recalcul dérivés + reschedule notifs).
+    /// `AppState.update(settings:)` (UserDefaults + recalcul dérivés + reschedule notifs).
     private func mutate(_ transform: (inout Settings) -> Void) {
         var s = app.settings
         transform(&s)

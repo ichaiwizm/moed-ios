@@ -19,7 +19,7 @@
 //  L'identifiant `com.wizycode.moed.refresh` est déclaré dans
 //  `Info.plist` → `BGTaskSchedulerPermittedIdentifiers` (déjà présent).
 //
-//  Tout est recalculé localement à partir de l'état persisté (App Group) :
+//  Tout est recalculé localement à partir de l'état persisté :
 //  `SettingsStore` + `FamilyStore` + `StaticData` — AUCUN réseau (SPEC règle
 //  d'or n°1). Dépendances : Store, Data, Engine (via NotificationScheduler).
 //
@@ -83,7 +83,7 @@ public enum BackgroundRefresh {
         //    d'expirer) afin de ne jamais casser la chaîne de réveils.
         schedule()
 
-        // 2. Reconstituer le contexte 100 % offline depuis l'App Group.
+        // 2. Reconstituer le contexte 100 % offline depuis les préférences persistées.
         let settings = SettingsStore.load()
         let family = FamilyStore.load()
         let city = StaticData.city(slug: settings.citySlug)

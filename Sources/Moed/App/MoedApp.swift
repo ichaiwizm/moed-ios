@@ -18,7 +18,7 @@ import SwiftUI
 struct MoedApp: App {
 
     /// État racine observable (Observation framework, iOS 17).
-    /// Charge settings + carnet familial depuis le container App Group,
+    /// Charge settings + carnet familial depuis le stockage local (UserDefaults + Documents),
     /// expose les dérivés synchrones (ville, geo, langue, direction).
     @State private var appState = AppState()
 

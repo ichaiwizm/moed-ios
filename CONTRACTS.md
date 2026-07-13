@@ -485,13 +485,13 @@ Sous-navigation : chaque onglet possède son `NavigationStack`. Détails poussé
     func update(settings: Settings)        // persiste + recalcule dérivés + reschedule notifs
 }
 
-// SettingsStore.swift — UserDefaults(suiteName: appGroup) "group.com.wizycode.moed"
+// SettingsStore.swift — UserDefaults.standard (widget recalcule tout localement, aucun conteneur partagé)
 enum SettingsStore {
     static func load() -> Settings
     static func save(_ s: Settings)
 }
 
-// FamilyStore.swift — JSON "moed_family" dans le container App Group (rien ne quitte l'appareil)
+// FamilyStore.swift — JSON "moed_family" dans le répertoire Documents (rien ne quitte l'appareil)
 enum FamilyStore {
     static func load() -> [PersonRecord]
     static func save(_ people: [PersonRecord])
@@ -503,7 +503,7 @@ final class LocationProvider: NSObject {
 }
 ```
 
-App Group `group.com.wizycode.moed` partagé app ↔ widgets. Bundle app `com.wizycode.moed`, scheme `Moed` (attendus par le Fastfile CI).
+Pas d'App Group : le widget recalcule tout localement via les moteurs déterministes offline (double target membership Engine/Data/SettingsStore). Bundle app `com.wizycode.moed`, scheme `Moed` (attendus par le Fastfile CI).
 
 ### 4.3 ViewModels d'écran
 
@@ -519,7 +519,7 @@ enum NotificationScheduler {
 }
 enum BackgroundRefresh { static func register(); static func schedule() }   // BGTaskScheduler (id Info.plist)
 
-// MoedWidgets/ — WidgetKit ; TimelineProvider recalcule LOCALEMENT via App Group (Engine + Data partagés)
+// MoedWidgets/ — WidgetKit ; TimelineProvider recalcule LOCALEMENT (Engine + Data partagés via double target membership, aucun conteneur partagé)
 // Widgets figés : CandleWidget (small/medium + Lock Screen), ZmanimWidget (medium), OmerWidget (small + Lock Screen)
 ```
 

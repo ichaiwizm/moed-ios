@@ -5,7 +5,7 @@
 //  RECALCUL LOCAL des widgets (CONTRACTS §4.4 / DESIGN §11).
 //
 //  Le `TimelineProvider` de chaque widget ne lit AUCUN réseau : il recharge les
-//  préférences depuis l'App Group (`SettingsStore`, partagé avec l'app) et
+//  préférences depuis `UserDefaults.standard` (`SettingsStore`) et
 //  rejoue les moteurs déterministes offline (`ZmanimEngine`, `CandleEngine`,
 //  `CalendarEngine`, `HebrewDateEngine`) — exactement comme `AppState`, mais
 //  sans horloge ni état observable. Ces moteurs et `StaticData` sont partagés
@@ -23,7 +23,7 @@ import Foundation
 
 // MARK: - Contexte partagé (préférences + géo + langue)
 
-/// Instantané du contexte utilisateur au moment du calcul, dérivé de l'App Group.
+/// Instantané du contexte utilisateur au moment du calcul, dérivé des préférences.
 struct WidgetContext: Sendable {
     let settings: Settings
     let city: City
@@ -84,7 +84,7 @@ enum WidgetEngine {
 
     // MARK: Contexte
 
-    /// Recharge le contexte depuis l'App Group (préférences partagées) + datasets.
+    /// Recharge le contexte depuis les préférences (`UserDefaults.standard`) + datasets.
     /// Réplique les dérivés de `AppState` (ville, géo, région effective, langue).
     static func context() -> WidgetContext {
         let settings = SettingsStore.load()

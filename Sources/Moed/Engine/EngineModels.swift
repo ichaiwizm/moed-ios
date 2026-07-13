@@ -454,7 +454,7 @@ public struct NotifPrefs: Codable, Equatable, Sendable {
     }
 }
 
-/// Réglages persistés (UserDefaults App Group). Valeurs par défaut portées du web.
+/// Réglages persistés (UserDefaults.standard). Valeurs par défaut portées du web.
 public struct Settings: Codable, Equatable, Sendable {
     public var citySlug: String
     public var candle: CandleMode

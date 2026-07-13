@@ -3,8 +3,8 @@
 //  MoedWidgets — extension WidgetKit
 //
 //  Les trois `TimelineProvider` (Allumage / Zmanim / Omer). Chacun RECALCULE
-//  localement via `WidgetEngine` (App Group partagé, moteurs déterministes
-//  offline) — aucun réseau, aucune dépendance à l'app en cours d'exécution
+//  localement via `WidgetEngine` (moteurs déterministes
+//  offline) — aucun réseau, aucun conteneur partagé, aucune dépendance à l'app en cours d'exécution
 //  (CONTRACTS §4.4 / DESIGN §11).
 //
 //  Stratégie de timeline commune :

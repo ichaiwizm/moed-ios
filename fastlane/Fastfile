@@ -37,6 +37,7 @@ platform :ios do
     build_app(
       scheme: SCHEME,
       export_method: "app-store",
+      disable_xcpretty: true,
       export_options: { signingStyle: "manual", provisioningProfiles: {
         APP_IDENTIFIER => "match AppStore #{APP_IDENTIFIER}"
       } }

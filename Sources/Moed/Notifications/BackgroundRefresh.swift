@@ -49,7 +49,7 @@ public enum BackgroundRefresh {
     /// où iOS n'autorise qu'un enregistrement par identifiant et par cycle de vie.
     public static func register() {
         #if canImport(BackgroundTasks)
-        BGTaskScheduler.shared.register(forTaskIdentifier: taskIdentifier, using: nil) { task in
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: taskIdentifier, using: nil) { task in
             handle(task)
         }
         #endif

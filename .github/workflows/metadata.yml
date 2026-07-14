@@ -1,0 +1,29 @@
+name: iOS Metadata
+
+# Pousse uniquement les métadonnées App Store (nom, sous-titre, description,
+# mots-clés, URLs, nouveautés) via fastlane deliver + clé API App Store Connect.
+# Aucun binaire n'est buildé ni uploadé, rien n'est soumis à la review.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  metadata:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Pousser les métadonnées (fastlane deliver)
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+        run: bundle exec fastlane ios metadata

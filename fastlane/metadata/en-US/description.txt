@@ -1,0 +1,17 @@
+Moed is your pocket Jewish calendar (luach): today's Hebrew date, candle-lighting and full zmanim for your city, the weekly parsha, holidays, fasts, the Omer count, Daf Yomi, Hebrew birthdays and yahrzeits with reminders, and the day's tzadikim. Everything is computed on-device — fully offline, free, no account, no ads — in Hebrew, French and English.
+
+Your whole Jewish calendar, on your device
+- Today's Hebrew date and Hebrew ⇄ Gregorian conversion, past and future.
+- Zmanim (halachic times) for your city or location: alot hashachar, netz, sof zman kriat shema (MGA and GRA), chatzot, mincha, plag hamincha, shkia, tzeit hakochavim and Rabbeinu Tam — with the various shitot.
+- Shabbat and holiday candle-lighting times.
+- Parashat hashavua and haftara (Ashkenazi and Sephardi), Israel / diaspora distinction.
+- Holidays, Rosh Chodesh, fasts (with computed times), Chol Hamoed, Sefirat HaOmer and Daf Yomi.
+
+Your loved ones, at the right time
+Save Hebrew birthdays and yahrzeits: Moed computes the next occurrences and reminds you of candle-lighting, the Omer, holidays and kaddish. Delicate halachic rules (Cheshvan, Kislev, Adar in a leap year) are handled automatically.
+
+Tzadikim & hilulot
+Each day, discover which tzadikim have their hilula, with a sourced, trilingual biography, and browse the directory.
+
+Calm, exact, offline
+All astronomical and halachic computation runs on your device, with no backend and no ads. Hebrew, French and English at parity, with special care for Hebrew reading (RTL). Times are for information: always follow your community for practice.

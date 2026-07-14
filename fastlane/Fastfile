@@ -50,6 +50,22 @@ platform :ios do
     )
   end
 
+  desc "Pousser uniquement les métadonnées App Store (sans binaire, sans review)"
+  lane :metadata do
+    api_key = asc_api_key
+    deliver(
+      api_key: api_key,
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      skip_app_version_update: false,
+      force: true,
+      run_precheck_before_submit: false,
+      submit_for_review: false,
+      overwrite_screenshots: false,
+      metadata_path: "./fastlane/metadata"
+    )
+  end
+
   desc "Build + soumission App Store (review)"
   lane :release do
     api_key = asc_api_key

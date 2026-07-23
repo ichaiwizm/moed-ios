@@ -1,0 +1,36 @@
+# Flow Maestro — captures App Store de Moed sur simulateur iOS.
+# Navigue les 5 onglets figés et capture chaque écran. La langue (FR) et la
+# status bar (9:41) sont posées AU NIVEAU DU SIMULATEUR par le workflow avant
+# ce flow — ici on se contente de naviguer + capturer.
+# Les onglets sont tapés par leur libellé FR (accessibilityLabel = texte visible),
+# stable et sans dépendre d'accessibilityIdentifier (peu fiable sur une TabBar SwiftUI).
+appId: com.wizycode.moed
+---
+- launchApp
+- waitForAnimationToEnd:
+    timeout: 9000
+- takeScreenshot: fastlane/screenshots/fr-FR/01_aujourdhui
+
+- tapOn:
+    text: "Calendrier"
+- waitForAnimationToEnd:
+    timeout: 5000
+- takeScreenshot: fastlane/screenshots/fr-FR/02_calendrier
+
+- tapOn:
+    text: "Personnel"
+- waitForAnimationToEnd:
+    timeout: 5000
+- takeScreenshot: fastlane/screenshots/fr-FR/03_personnel
+
+- tapOn:
+    text: "Tsadikim"
+- waitForAnimationToEnd:
+    timeout: 5000
+- takeScreenshot: fastlane/screenshots/fr-FR/04_tsadikim
+
+- tapOn:
+    text: "Réglages"
+- waitForAnimationToEnd:
+    timeout: 5000
+- takeScreenshot: fastlane/screenshots/fr-FR/05_reglages

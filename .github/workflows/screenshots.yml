@@ -1,18 +1,24 @@
 name: iOS Screenshots
 
-# Génère des captures d'écran App Store depuis un simulateur iOS (aucun compte
-# de test, aucune UI-test), puis les pousse sur la fiche App Store Connect via
-# fastlane deliver (lane `screenshots`). Rien n'est buildé pour un device réel,
-# rien n'est soumis à la review.
+# Génère des captures d'écran App Store de Moed depuis un simulateur iOS, piloté
+# de bout en bout par CI (aucun Mac local, aucun compte de test) :
+#   1. build simulateur (.app) via XcodeGen + xcodebuild
+#   2. boot d'un iPhone 6.9" (1320×2868), langue forcée FR, status bar figée 9:41
+#   3. navigation des 5 onglets + capture via Maestro (.maestro/screenshots.yaml)
+#   4. vérif des dimensions, publication en artefact
+#   5. (optionnel) push sur la fiche App Store Connect via fastlane deliver
 #
-# moed-ios : app 100 % hors-ligne, sans authentification. L'écran initial
-# (TodayView : date hébraïque + zmanim du jour) s'affiche immédiatement — les
-# captures sont exploitables telles quelles. Les PNG sont TOUJOURS exposés en
-# artefact. Best-effort : si le build simulateur ou le lancement échoue, le job
-# échoue proprement sans rien casser.
+# Rien n'est buildé pour un device réel, rien n'est soumis à la review.
+# Le push ASC est gardé derrière l'input `push_asc` (défaut: false) pour pouvoir
+# d'abord vérifier les captures en artefact.
 
 on:
   workflow_dispatch:
+    inputs:
+      push_asc:
+        description: "Pousser les captures sur App Store Connect (fastlane deliver)"
+        type: boolean
+        default: false
 
 env:
   SCHEME: Moed
@@ -33,6 +39,12 @@ jobs:
         with:
           ruby-version: "3.2"
           bundler-cache: true
+
+      - name: Setup Java (requis par Maestro)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
 
       - name: Select Xcode (le plus récent dispo)
         run: |
@@ -63,46 +75,65 @@ jobs:
           test -d "$APP_PATH" || { echo "::error::$APP_PATH introuvable après build"; exit 1; }
           echo "APP_PATH=$APP_PATH" >> "$GITHUB_ENV"
 
-      - name: Choisir / créer un simulateur 6.9" (Pro Max) et booter
+      - name: Créer/booter un iPhone 6.9" (Pro Max, 1320×2868)
         run: |
           set -euo pipefail
-          # Priorité à un "iPhone 16 Pro Max" (résolution 1320x2868 = 6.9" sans ambiguïté).
           pick_udid() {
             xcrun simctl list devices available | grep -F "$1" | grep -Eo '[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}' | head -1
           }
           UDID=$(pick_udid "iPhone 16 Pro Max")
           [ -z "$UDID" ] && UDID=$(pick_udid "Pro Max")
           if [ -z "$UDID" ]; then
-            echo "Aucun Pro Max dispo — tentative de création."
+            echo "Aucun Pro Max dispo — création."
             RUNTIME=$(xcrun simctl list runtimes ios available | grep -Eo 'com.apple.CoreSimulator.SimRuntime.iOS-[0-9-]+' | tail -1)
             DEVTYPE=$(xcrun simctl list devicetypes | grep -Eo 'com.apple.CoreSimulator.SimDeviceType.iPhone-[0-9]+-Pro-Max' | sort -V | tail -1)
-            echo "Runtime=$RUNTIME DeviceType=$DEVTYPE"
-            [ -n "$RUNTIME" ] && [ -n "$DEVTYPE" ] || { echo "::error::Impossible de créer un simulateur Pro Max"; exit 1; }
+            [ -n "$RUNTIME" ] && [ -n "$DEVTYPE" ] || { echo "::error::Création simulateur Pro Max impossible"; exit 1; }
             UDID=$(xcrun simctl create "shot-promax" "$DEVTYPE" "$RUNTIME")
           fi
-          echo "Simulateur retenu: $UDID"
+          echo "Simulateur: $UDID"
           echo "SIM_UDID=$UDID" >> "$GITHUB_ENV"
           xcrun simctl boot "$UDID" || true
           xcrun simctl bootstatus "$UDID" -b || sleep 20
 
-      - name: Installer, lancer (forcé en français) et capturer
+      - name: Forcer la langue FR au niveau du simulateur (reboot pour appliquer)
         run: |
           set -euo pipefail
-          mkdir -p "fastlane/screenshots/$LOCALE_DIR"
+          # lang = settings.lang ?? Lang.fromSystem() -> forcer la langue système suffit.
+          xcrun simctl spawn "$SIM_UDID" defaults write .GlobalPreferences AppleLanguages -array fr
+          xcrun simctl spawn "$SIM_UDID" defaults write .GlobalPreferences AppleLocale -string fr_FR
+          xcrun simctl shutdown "$SIM_UDID"
+          xcrun simctl boot "$SIM_UDID"
+          xcrun simctl bootstatus "$SIM_UDID" -b || sleep 20
+
+      - name: Status bar propre (9:41, plein signal, batterie pleine)
+        run: |
+          xcrun simctl status_bar "$SIM_UDID" override \
+            --time "9:41" \
+            --dataNetwork wifi --wifiMode active --wifiBars 3 \
+            --cellularMode active --cellularBars 4 \
+            --batteryState charged --batteryLevel 100 || echo "status_bar override best-effort"
+
+      - name: Installer l'app + installer Maestro
+        run: |
+          set -euo pipefail
           xcrun simctl install "$SIM_UDID" "$APP_PATH"
-          # Force la langue/région FR pour des captures localisées.
-          xcrun simctl launch "$SIM_UDID" "$BUNDLE_ID" -AppleLanguages "(fr)" -AppleLocale "fr_FR" || {
-            echo "::error::Lancement de l'app échoué"; exit 1; }
-          sleep 10
-          xcrun simctl io "$SIM_UDID" screenshot "fastlane/screenshots/$LOCALE_DIR/01_69.png"
-          sleep 4
-          xcrun simctl io "$SIM_UDID" screenshot "fastlane/screenshots/$LOCALE_DIR/02_69.png"
-          sleep 4
-          xcrun simctl io "$SIM_UDID" screenshot "fastlane/screenshots/$LOCALE_DIR/03_69.png"
+          curl -fsSL "https://get.maestro.mobile.dev" | bash
+          echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
+
+      - name: Capturer les 5 écrans (Maestro)
+        run: |
+          set -euo pipefail
+          rm -rf "fastlane/screenshots/$LOCALE_DIR"
+          mkdir -p "fastlane/screenshots/$LOCALE_DIR"
+          export MAESTRO_DRIVER_STARTUP_TIMEOUT=120000
+          # Maestro cible automatiquement le simulateur booté.
+          maestro test .maestro/screenshots.yaml
           echo "--- Captures produites ---"
           ls -la "fastlane/screenshots/$LOCALE_DIR"
-          # Dimensions (vérif 6.9") si sips dispo
-          for f in fastlane/screenshots/$LOCALE_DIR/*.png; do sips -g pixelWidth -g pixelHeight "$f" || true; done
+          echo "--- Dimensions ---"
+          for f in fastlane/screenshots/$LOCALE_DIR/*.png; do
+            sips -g pixelWidth -g pixelHeight "$f" | tr '\n' ' '; echo " <- $(basename "$f")"
+          done
 
       - name: Publier les captures en artefact (toujours)
         if: always()
@@ -112,7 +143,8 @@ jobs:
           path: fastlane/screenshots/**
           if-no-files-found: warn
 
-      - name: Pousser les captures sur App Store Connect (fastlane deliver)
+      - name: Pousser sur App Store Connect (fastlane deliver)
+        if: ${{ inputs.push_asc }}
         env:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}

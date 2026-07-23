@@ -123,15 +123,24 @@ jobs:
       - name: Capturer les 5 écrans (Maestro)
         run: |
           set -euo pipefail
-          rm -rf "fastlane/screenshots/$LOCALE_DIR"
-          mkdir -p "fastlane/screenshots/$LOCALE_DIR"
+          OUT="$PWD/fastlane/screenshots/$LOCALE_DIR"
+          rm -rf "$OUT"; mkdir -p "$OUT"
           export MAESTRO_DRIVER_STARTUP_TIMEOUT=120000
-          # Maestro cible automatiquement le simulateur booté.
-          maestro test .maestro/screenshots.yaml
+          # Chemin ABSOLU passé en paramètre (Maestro ne résout pas les chemins
+          # relatifs de takeScreenshot depuis le CWD). Maestro cible le sim booté.
+          maestro test -e OUT="$OUT" .maestro/screenshots.yaml
+          # Filet de sécurité : si rien n'a atterri dans OUT, rapatrier les PNG
+          # récents trouvés dans le workspace ou ~/.maestro.
+          if ! ls "$OUT"/*.png >/dev/null 2>&1; then
+            echo "::warning::Aucun PNG dans $OUT — recherche ailleurs"
+            find "$PWD" "$HOME/.maestro" -name '0[1-5]_*.png' -type f 2>/dev/null \
+              -exec mv -f {} "$OUT/" \; || true
+          fi
           echo "--- Captures produites ---"
-          ls -la "fastlane/screenshots/$LOCALE_DIR"
+          ls -la "$OUT"
+          test -n "$(ls -A "$OUT"/*.png 2>/dev/null)" || { echo "::error::aucune capture générée"; exit 1; }
           echo "--- Dimensions ---"
-          for f in fastlane/screenshots/$LOCALE_DIR/*.png; do
+          for f in "$OUT"/*.png; do
             sips -g pixelWidth -g pixelHeight "$f" | tr '\n' ' '; echo " <- $(basename "$f")"
           done
 

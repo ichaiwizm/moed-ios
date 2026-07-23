@@ -125,10 +125,14 @@ jobs:
           set -euo pipefail
           OUT="$PWD/fastlane/screenshots/$LOCALE_DIR"
           rm -rf "$OUT"; mkdir -p "$OUT"
-          export MAESTRO_DRIVER_STARTUP_TIMEOUT=120000
+          # Le driver XCUITest de Maestro se compile/installe à froid (parfois >2min)
+          # -> timeout large + 1 retry pour absorber la flakiness "driver not ready".
+          export MAESTRO_DRIVER_STARTUP_TIMEOUT=300000
           # Chemin ABSOLU passé en paramètre (Maestro ne résout pas les chemins
           # relatifs de takeScreenshot depuis le CWD). Maestro cible le sim booté.
-          maestro test -e OUT="$OUT" .maestro/screenshots.yaml
+          maestro test -e OUT="$OUT" .maestro/screenshots.yaml \
+            || { echo "::warning::1er essai Maestro KO, retry"; sleep 15; \
+                 maestro test -e OUT="$OUT" .maestro/screenshots.yaml; }
           # Filet de sécurité : si rien n'a atterri dans OUT, rapatrier les PNG
           # récents trouvés dans le workspace ou ~/.maestro.
           if ! ls "$OUT"/*.png >/dev/null 2>&1; then
